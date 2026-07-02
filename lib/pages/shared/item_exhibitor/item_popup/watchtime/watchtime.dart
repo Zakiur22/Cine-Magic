@@ -303,7 +303,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
                 ),
                 textButtonTheme: TextButtonThemeData(
                   style: TextButton.styleFrom(
-                    primary: kPrimaryColor,
+                    foregroundColor: kPrimaryColor,
                   ),
                 ),
               ),
@@ -336,7 +336,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
               ),
               textButtonTheme: TextButtonThemeData(
                 style: TextButton.styleFrom(
-                  primary: Colors.white,
+                  foregroundColor: Colors.white,
                 ),
               ),
             ),
