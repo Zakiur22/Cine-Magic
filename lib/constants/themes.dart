@@ -4,7 +4,9 @@ import 'package:movielab/constants/colors.dart';
 
 class AppThemes {
   static final darkTheme = ThemeData(
-    backgroundColor: kBackgroundColor,
+    colorScheme: const ColorScheme.dark(
+      surface: kBackgroundColor,
+    ),
     scaffoldBackgroundColor: kBackgroundColor,
     appBarTheme: const AppBarTheme(backgroundColor: kBackgroundColor),
     primaryColor: kPrimaryColor,
@@ -12,7 +14,7 @@ class AppThemes {
     textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
             textStyle: const TextStyle(color: Colors.white),
-            primary: Colors.white)),
+            foregroundColor: Colors.white)),
     textTheme: GoogleFonts.ubuntuTextTheme(
       ThemeData.dark().textTheme,
     ),
