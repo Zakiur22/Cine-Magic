@@ -9,7 +9,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../constants/colors.dart';
 import '../../constants/types.dart';
 import '../../modules/tools/system_ui_overlay_style.dart';
-import 'get_initial_data.dart';
+import 'get_Initial_data.dart';
 import 'get_user_data.dart';
 
 class SplashScreen extends StatefulWidget {
