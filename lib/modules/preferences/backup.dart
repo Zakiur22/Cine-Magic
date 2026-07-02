@@ -10,7 +10,7 @@ import 'package:movielab/models/item_models/actor_models/actor_preview_model.dar
 import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
 import 'package:movielab/models/user_model/user_model.dart';
 import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/modules/recommender/recommender.dart';
+import 'package:movielab/modules/Recommender/Recommender.dart';
 import 'package:movielab/pages/splash/get_user_data.dart';
 import 'package:permission_handler/permission_handler.dart';
 
