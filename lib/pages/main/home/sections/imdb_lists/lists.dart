@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movielab/constants/types.dart';
 import 'package:movielab/modules/api/api_requester.dart';
 import 'package:movielab/pages/main/home/sections/home_titles.dart';
-import 'package:movielab/pages/main/home/sections/imdb_lists/pages/top_tvs.dart';
+import 'package:movielab/pages/main/home/sections/imdb_lists/pages/top_TVs.dart';
 import 'package:movielab/pages/main/home/sections/imdb_lists/pages/top_movies.dart';
 import '../../../../../modules/tools/navigate.dart';
 import 'box.dart';
