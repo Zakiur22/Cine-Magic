@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:movielab/constants/types.dart';
 import 'package:movielab/pages/main/home/home_data_controller.dart';
-import 'package:test/test.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:movielab/modules/api/api_requester.dart';
 
 void main() {
