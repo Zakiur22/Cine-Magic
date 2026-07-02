@@ -70,7 +70,7 @@ class ToastWidget extends StatelessWidget {
                     }
                   },
               style:
-                  TextButton.styleFrom(primary: buttonColor.withOpacity(0.5)),
+                  TextButton.styleFrom(foregroundColor: buttonColor.withOpacity(0.5)),
               child: Text(
                 buttonText,
                 style: TextStyle(
