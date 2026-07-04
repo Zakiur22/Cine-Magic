@@ -69,6 +69,15 @@ flutter pub get
 flutter run
 ```
 
+## Watchlist Reminder Engine
+MovieLab now features a robust **Watchlist Reminder Engine** built using a strict **Clean Architecture** directory structure under `lib/features/watchlist_reminder/`.
+
+### Architecture Overview
+- **Domain Layer:** Pure entities (`WatchlistReminder`) and interface definitions (`WatchlistReminderRepository`).
+- **Data Layer:** Hive database implementation (`WatchlistReminderRepositoryImpl`) managing persistent schedules directly inside the existing `watchlist` box.
+- **Presentation Layer (GetX):** Periodically checks for scheduled reminders via `WatchlistReminderController` and alerts users via interactive UI elements.
+- **UI Integration:** A beautiful interactive reminder chip inside the media detail pages allowing users to pick planned dates/times and see current schedules.
+
 ## Contribute
 If you have an issue or found a bug, please raise a GitHub issue [here](https://github.com/ErfanRht/MovieLab/issues). Pull requests are also welcome.
 
