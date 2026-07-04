@@ -4,43 +4,6 @@
 Discover, track, and schedule your favorite cinematic experiences. Sourced directly from the largest global media databases.
 
 
-<p align="center">
-  <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80" alt="CineMagic Banner" width="100%" style="border-radius: 8px;" />
-</p>
-
-
-<p align="center">
-  <img src="./screenshots/mockups/CineMagic_mockup2.jpg" width="100%" alt="CineMagic Showcase Mockup" />
-</p>
-
-
----
-
-
-## 📱 Visual Showcase & Screenshots
-
-
-Here is a visual overview of the clean, modern, and high-fidelity interface of CineMagic:
-
-
-<p align="center">
-  <img src="screenshots/Screenshot_01.jpg" width="31%" alt="CineMagic Home" />
-  &nbsp;
-  <img src="screenshots/Screenshot_02.jpg" width="31%" alt="CineMagic Details" />
-  &nbsp;
-  <img src="screenshots/Screenshot_03.jpg" width="31%" alt="CineMagic Search" />
-</p>
-
-<p align="center">
-  &nbsp;
-  <img src="screenshots/Screenshot_04.jpg" width="31%" alt="CineMagic Cast Info" />
-  &nbsp;
-  <img src="screenshots/Screenshot_05.jpg" width="31%" alt="CineMagic Reviews" />
-  &nbsp;
-  <img src="screenshots/Screenshot_06.jpg" width="31%" alt="CineMagic Watchlist" />
-</p>
-
-
 ---
 
 
