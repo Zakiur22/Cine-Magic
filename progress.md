@@ -1,4 +1,4 @@
-# Project Progress - MovieLab
+# Project Progress - CineMagic
 
 ## Phase 2: Initialization
 - [x] Create project-level `plan.md`

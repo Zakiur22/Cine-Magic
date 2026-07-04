@@ -1,4 +1,4 @@
-# Project Plan - MovieLab
+# Project Plan - CineMagic
 
 ## 1. Current State Assessment
 * **Category:** Media & Entertainment

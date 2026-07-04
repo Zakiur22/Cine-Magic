@@ -1,103 +1,87 @@
+# 🎬 CineMagic: Movies & TV Guide
+
+Discover, track, and schedule your favorite cinematic experiences. Sourced directly from the largest global media databases.
+
 <p align="center">
-  <h1 align="center">MovieLab: Movies & TV Guide</h1>
-
-  <p align="left">
-    MovieLab is an open source movie tracker and movie finder where you can find movies, series, seasons, episodes. movie recommendation and actors from the largest movie database IMDb. 
-  With MovieLab, you have movies and series information right at your fingertips!
-  </p>
-  <p align="left">
-  Do you like movies? Try MovieLab <a href="https://github.com/ErfanRht/MovieLab/releases/">here</a>, or if you are a developer click <a href="https://github.com/ErfanRht/MovieLab#getting-started">here</a>.
-  </p>
+  <img src="./screenshots/mockups/CineMagic_mockup2.jpg" width="100%" alt="CineMagic Showcase" />
 </p>
-
-[![GitHub release (latest)](https://img.shields.io/github/v/release/ErfanRht/MovieLab)](https://github.com/ErfanRht/MovieLab/releases)
-![GitHub repo size](https://img.shields.io/github/repo-size/ErfanRht/MovieLab)
-[![GitHub stars](https://img.shields.io/github/stars/ErfanRht/MovieLab?style=social)](https://github.com/ErfanRht/MovieLab/stargazers) 
-[![GitHub forks](https://img.shields.io/github/forks/ErfanRht/MovieLab?style=social)](https://github.com/ErfanRht/MovieLab/network/members) 
-[![GitHub issues](https://img.shields.io/github/issues/ErfanRht/MovieLab?style=social)](https://github.com/ErfanRht/MovieLab/issues) 
-[![GitHub license](https://img.shields.io/github/license/ErfanRht/MovieLab?style=social)](https://github.com/ErfanRht/MovieLab/blob/master/LICENSE) 
-
-<p align="center"><a href="https://github.com/ErfanRht/MovieLab/"><img src="./screenshots/mockups/MovieLab_mockup2.jpg" width="100%"/></a>
-
-## Screenshots
-
-<div align="center" style="width:100%;display:flex;justify-content:space-between;">
-<img width="32%" src="https://github.com/ErfanRht/MovieLab/blob/master/screenshots/Screenshot_01.jpg" align="center" alt="screenshot" />
-<img width="32%" src="https://github.com/ErfanRht/MovieLab/blob/master/screenshots/Screenshot_02.jpg" align="center" alt="screenshot" />
-<img width="32%" src="https://github.com/ErfanRht/MovieLab/blob/master/screenshots/Screenshot_03.jpg" align="center" alt="screenshot" />
-</div>
-<p> </p>
-<div align="center" style="width:100%;display:flex;justify-content:space-between;">
-<img width="32%" src="https://github.com/ErfanRht/MovieLab/blob/master/screenshots/Screenshot_04.jpg" align="center" alt="screenshot" />
-<img width="32%" src="https://github.com/ErfanRht/MovieLab/blob/master/screenshots/Screenshot_05.jpg" align="center" alt="screenshot" />
-<img width="32%" src="https://github.com/ErfanRht/MovieLab/blob/master/screenshots/Screenshot_06.jpg" align="center" alt="screenshot" />
-</div>
-
-## Download
-  You can simply download it for Android from [Here](https://ErfanRht.github.io/MovieLab-Intro).
-  
-## Getting Started
-1. If you don't have Flutter SDK installed; Please visit the official [Flutter](https://docs.flutter.dev/get-started/install) website.
-2. Fetch the latest source code from the master branch.
-
-``` 
-git clone https://github.com/ErfanRht/MovieLab.git
-```
-
-3. Add api key.
-
-<ul>
-
-MovieLab uses the IMDb API to fetch the needed data, so before using it you have to create an account on [IMDb api website](https://imdb-api.com/Identity/Account/Register), then you can get a free api key in your profile section and apply it to the app by the below steps.
-
-- go to `lib/.api.dart`
-- you will see the code like this
-```dart
-List<String> apiKeys = ["XXXXXXXXXX"];
-```
-- replace the all `xx..` to your own api key, like this
-```dart
-List<String> apiKeys = ["your_api_key_here"];
-```
-- It's done!
-</ul>
-
-4. Run the app with Android Studio or Visual Studio. Or the command line.
-
-``` 
-flutter pub get
-flutter run
-```
-
-## Watchlist Reminder Engine
-MovieLab now features a robust **Watchlist Reminder Engine** built using a strict **Clean Architecture** directory structure under `lib/features/watchlist_reminder/`.
-
-### Architecture Overview
-- **Domain Layer:** Pure entities (`WatchlistReminder`) and interface definitions (`WatchlistReminderRepository`).
-- **Data Layer:** Hive database implementation (`WatchlistReminderRepositoryImpl`) managing persistent schedules directly inside the existing `watchlist` box.
-- **Presentation Layer (GetX):** Periodically checks for scheduled reminders via `WatchlistReminderController` and alerts users via interactive UI elements.
-- **UI Integration:** A beautiful interactive reminder chip inside the media detail pages allowing users to pick planned dates/times and see current schedules.
-
-## Contribute
-If you have an issue or found a bug, please raise a GitHub issue [here](https://github.com/ErfanRht/MovieLab/issues). Pull requests are also welcome.
-
-## License
-This project is licensed under the [Apache-2.0 License](https://github.com/ErfanRht/MovieLab/blob/master/LICENSE).
-
-## Author
-This Flutter project is developed by [Erfan Rahmati](https://github.com/ErfanRht).
-
-## Contact
-You can reach out to me directly at [erfanrht2005@gmail.com](mailto:<erfanrht2005@gmail.com>).
-
-## Supporters
-[![Stargazers repo roster for @ErfanRht/MovieLab](https://reporoster.com/stars/ErfanRht/MovieLab)](https://github.com/ErfanRht/MovieLab/stargazers)
-[![Forkers repo roster for @ErfanRht/MovieLab](https://reporoster.com/forks/ErfanRht/MovieLab)](https://github.com/ErfanRht/MovieLab/network/members)
 
 ---
 
-<div align="center">
+## 🎨 Premium Visual Design
 
-### Show some ❤️ by starring 🌟 the repository!
+CineMagic offers a state-of-the-art visual experience designed with a rich cinematic aesthetic:
+* **Full-Bleed Posters:** Dynamic poster backdrops that blend smoothly using high-fidelity color gradients.
+* **Fluid Gestures:** Interactive gestures, swipe-to-remove grids, and beautiful hero page-transitions.
+* **Trailer Integration:** Direct YouTube player integration to view trailers instantly.
 
-</div>
+---
+
+## ✨ Key Features
+
+### 🔍 Unified Media Directory
+* **IMDb Integration:** Query movies, TV series, seasons, and episodes with extensive details (e.g., cast, crew, synopses, and reviews).
+* **Smart Recommendations:** Real-time recommendations engine suggests content tailored to your preferences.
+
+### 📦 Supercharged NoSQL Watchlist
+* **Sub-Millisecond Queries:** Powered by **Hive DB** to query, add, or remove titles with zero lag.
+* **Fully Localized Storage:** Your watchlist is saved entirely on-device, ensuring offline access.
+
+### ⏰ Premium Feature: Watchlist Reminder Engine [Phase 4 Update]
+CineMagic now features an interactive media scheduling and notification suite to keep you in sync with your watchlist:
+
+> [!TIP]
+> **Plan Ahead:** Click the dynamic alarm bell chip on any media page to queue a local push reminder for your planned watch date and time.
+
+---
+
+## 🏗️ Clean Architecture Overview
+
+The reminder module is isolated under `lib/features/watchlist_reminder/`, upholding clean architectural and SOLID principles:
+
+```
+lib/features/watchlist_reminder/
+├── domain/
+│   ├── models/           # Immutable WatchlistReminder data entity mapping movie IDs and times
+│   └── repositories/     # Repository contract interface specifying scheduling queries
+├── data/
+│   ├── datasources/      # Concrete local Hive database adapters
+│   └── repositories/     # Decoupled implementation binding domain contracts and datasources
+└── presentation/
+    ├── controllers/      # WatchlistReminderController (GetX) driving state and scheduling push triggers
+    └── widgets/          # Animated schedule chips and time picker sheet overlays
+```
+
+---
+
+## 🛠️ Setup & Local Configuration
+
+### 1. Retrieve API Key
+1. Register for an account on the [IMDb API Console](https://imdb-api.com/).
+2. Fetch your free API key in your developer profile.
+
+### 2. Configure Code
+Open `lib/.api.dart` and enter your credentials:
+```dart
+List<String> apiKeys = ["YOUR_API_KEY_HERE"];
+```
+
+### 3. Run Commands
+1. Install package dependencies:
+   ```bash
+   flutter pub get
+   ```
+2. Run code analysis:
+   ```bash
+   flutter analyze
+   ```
+3. Compile production-ready APK:
+   ```bash
+   flutter build apk --release
+   ```
+
+---
+
+## 📄 License & Open-Source
+Distributed under the **Apache-2.0 License**. See [LICENSE](LICENSE) for more details.
+Contributions and Pull Requests are always welcome!
