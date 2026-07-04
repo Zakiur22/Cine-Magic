@@ -6,7 +6,7 @@ import 'package:movielab/.api.dart';
 import 'package:movielab/constants/app.dart';
 import 'package:movielab/constants/types.dart';
 
-Future<RequestResult> key_getter() async {
+Future<RequestResult> keyGetter() async {
   const String url = "";
   if (url != "") {
     var response = await http.get(Uri.parse(url)).timeout(

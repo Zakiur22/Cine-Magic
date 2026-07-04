@@ -282,7 +282,7 @@ class APIRequester {
     if (apiKeys.isEmpty ||
         (apiKeys.length == 1 && apiKeys[0] == "XXXXXXXXXX")) {
       dynamic response;
-      await key_getter().then((result) async {
+      await keyGetter().then((result) async {
         if (result == RequestResult.FAILURE) {
           if (kDebugMode) {
             print(
