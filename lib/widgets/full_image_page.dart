@@ -4,7 +4,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:gallery_saver/gallery_saver.dart';
+import 'package:gal/gal.dart';
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:movielab/constants/colors.dart';
 import 'package:movielab/widgets/toast.dart';
 import 'package:share_plus/share_plus.dart';
@@ -121,13 +122,10 @@ class _FullImagePageState extends State<FullImagePage> {
 Future<void> downloadImage(BuildContext context, {required final String imageUrl}) async {
   try {
     LoadingUtils(context).startLoading();
-    await GallerySaver.saveImage(
-      imageUrl,
-      albumName: "MovieLab",
-    ).then((value) => {
-          LoadingUtils(context).stopLoading(),
-          LoadingUtils(context).showResult(value ?? true)
-        });
+    final file = await DefaultCacheManager().getSingleFile(imageUrl);
+    await Gal.putImage(file.path, album: "MovieLab");
+    LoadingUtils(context).stopLoading();
+    LoadingUtils(context).showResult(true);
   } catch (e) {
     if (kDebugMode) {
       print("Error: $e");
