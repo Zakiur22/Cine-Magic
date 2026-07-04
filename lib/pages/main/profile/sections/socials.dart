@@ -4,7 +4,7 @@ import 'package:share_plus/share_plus.dart';
 import '../../../../widgets/buttons/glassmorphism_button.dart';
 
 class ProfilePageSocials extends StatelessWidget {
-  const ProfilePageSocials({Key? key}) : super(key: key);
+  const ProfilePageSocials({super.key});
 
   @override
   Widget build(BuildContext context) {

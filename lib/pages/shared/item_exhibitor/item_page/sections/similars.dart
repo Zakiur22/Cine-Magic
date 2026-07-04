@@ -5,7 +5,7 @@ import 'package:movielab/widgets/section_title.dart';
 
 class ItemPageSimilars extends StatelessWidget {
   final FullShow show;
-  const ItemPageSimilars({Key? key, required this.show}) : super(key: key);
+  const ItemPageSimilars({super.key, required this.show});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class ItemPageSimilars extends StatelessWidget {
   }
 }
 
-similars({required List similars}) {
+SizedBox similars({required List similars}) {
   return SizedBox(
     height: 270,
     child: Row(

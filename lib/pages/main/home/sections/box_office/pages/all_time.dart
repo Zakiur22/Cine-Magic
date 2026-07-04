@@ -9,7 +9,7 @@ import 'package:movielab/pages/shared/item_exhibitor/item_box/expanded_item_box/
 import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
 
 class AllTimeBoxOfficePage extends StatelessWidget {
-  const AllTimeBoxOfficePage({Key? key}) : super(key: key);
+  const AllTimeBoxOfficePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class AllTimeBoxOfficePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: const Icon(
+                  icon: const FaIcon(
                     FontAwesomeIcons.arrowLeft,
                     size: 22.5,
                   )),

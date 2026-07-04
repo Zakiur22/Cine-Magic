@@ -3,8 +3,7 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:movielab/constants/colors.dart';
 
 class UserIMDbRating extends StatelessWidget {
-  const UserIMDbRating({Key? key, required this.imdbRatingAverage})
-      : super(key: key);
+  const UserIMDbRating({super.key, required this.imdbRatingAverage});
   final double imdbRatingAverage;
 
   @override
@@ -38,7 +37,7 @@ class UserIMDbRating extends StatelessWidget {
                 "Avarage IMDb rating",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: Colors.white.withOpacity(0.75),
+                    color: Colors.white.withValues(alpha: 0.75),
                     fontSize: 12.5,
                     fontWeight: FontWeight.w600),
               ),

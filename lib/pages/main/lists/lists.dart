@@ -3,7 +3,7 @@ import 'package:movielab/pages/shared/userlist_body.dart';
 import 'sections/navbar.dart';
 
 class UserListsPage extends StatelessWidget {
-  const UserListsPage({Key? key}) : super(key: key);
+  const UserListsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

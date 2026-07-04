@@ -8,8 +8,7 @@ import 'package:movielab/pages/shared/item_exhibitor/item_box/item_box_common.da
 class ExpandedActorBox extends StatelessWidget {
   final ActorPreview actor;
   final String preTag;
-  const ExpandedActorBox({Key? key, required this.actor, this.preTag = ""})
-      : super(key: key);
+  const ExpandedActorBox({super.key, required this.actor, this.preTag = ""});
 
   @override
   Widget build(BuildContext context) {

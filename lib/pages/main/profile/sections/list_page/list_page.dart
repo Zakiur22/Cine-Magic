@@ -11,7 +11,7 @@ import 'package:movielab/widgets/toast.dart';
 // ignore: must_be_immutable
 class ListPage extends StatelessWidget {
   final String listName;
-  ListPage({Key? key, required this.listName}) : super(key: key);
+  ListPage({super.key, required this.listName});
   late FToast fToast;
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class ListPage extends StatelessWidget {
                                 PreferencesShareholder preferencesShareholder =
                                     PreferencesShareholder();
                                 List<ShowPreview> list =
-                                    await preferencesShareholder.getList(
+                                    preferencesShareholder.getList(
                                         listName: listName);
                                 for (ShowPreview show in list) {
                                   preferencesShareholder.addShowToList(
@@ -69,7 +69,7 @@ class ListPage extends StatelessWidget {
                       },
                       tooltip: "Delete all",
                       backgroundColor: Colors.white,
-                      child: const Icon(
+                      child: const FaIcon(
                         FontAwesomeIcons.trash,
                         color: kBlueColor,
                       )),

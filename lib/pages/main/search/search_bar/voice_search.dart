@@ -10,7 +10,7 @@ import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'package:avatar_glow/avatar_glow.dart';
 
 class VoiceSearchAlertDialog extends StatefulWidget {
-  const VoiceSearchAlertDialog({Key? key}) : super(key: key);
+  const VoiceSearchAlertDialog({super.key});
 
   @override
   State<VoiceSearchAlertDialog> createState() => _VoiceSearchAlertDialogState();
@@ -59,7 +59,7 @@ class _VoiceSearchAlertDialogState extends State<VoiceSearchAlertDialog> {
                       backgroundColor:
                           !_isListening ? Colors.white : kBlueColor,
                       radius: 35,
-                      child: Icon(
+                      child: FaIcon(
                         FontAwesomeIcons.microphoneLines,
                         color: _isListening ? Colors.white : kBlueColor,
                         size: 25,
@@ -72,7 +72,7 @@ class _VoiceSearchAlertDialogState extends State<VoiceSearchAlertDialog> {
                 _text,
                 style: TextStyle(
                     color: _isListening
-                        ? kLightBlueColor.withOpacity(0.75)
+                        ? kLightBlueColor.withValues(alpha: 0.75)
                         : Colors.white,
                     fontWeight: FontWeight.w700),
               )

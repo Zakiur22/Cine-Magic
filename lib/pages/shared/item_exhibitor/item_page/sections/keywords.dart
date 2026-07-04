@@ -4,7 +4,7 @@ import 'package:movielab/widgets/section_title.dart';
 
 class ItemPageKeywords extends StatelessWidget {
   final FullShow show;
-  const ItemPageKeywords({Key? key, required this.show}) : super(key: key);
+  const ItemPageKeywords({super.key, required this.show});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class ItemPageKeywords extends StatelessWidget {
                                 child: Text(show.tagline,
                                     softWrap: true,
                                     style: TextStyle(
-                                        color: Colors.white.withOpacity(0.6),
+                                        color: Colors.white.withValues(alpha: 0.6),
                                         fontSize: 12.5,
                                         fontWeight: FontWeight.w500)),
                               ),
@@ -40,7 +40,7 @@ class ItemPageKeywords extends StatelessWidget {
                           child: Text(show.keywords,
                               softWrap: true,
                               style: TextStyle(
-                                  color: Colors.white.withOpacity(0.6),
+                                  color: Colors.white.withValues(alpha: 0.6),
                                   fontSize: 12.5,
                                   fontWeight: FontWeight.w500)),
                         ),

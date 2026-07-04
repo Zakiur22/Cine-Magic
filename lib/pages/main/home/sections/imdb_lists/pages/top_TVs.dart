@@ -9,7 +9,7 @@ import 'package:movielab/pages/shared/item_exhibitor/item_box/expanded_item_box/
 import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
 
 class Top250TVsPage extends StatelessWidget {
-  const Top250TVsPage({Key? key}) : super(key: key);
+  const Top250TVsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class Top250TVsPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: const Icon(
+                  icon: const FaIcon(
                     FontAwesomeIcons.arrowLeft,
                     color: kBackgroundColor,
                     size: 22.5,

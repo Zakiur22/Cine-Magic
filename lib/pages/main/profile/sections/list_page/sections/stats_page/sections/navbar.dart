@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:movielab/constants/colors.dart';
 import 'package:movielab/modules/tools/capitalizer.dart';
 
 AppBar listPageStatsNavbar(context, {required final String listName}) {
@@ -17,7 +16,7 @@ AppBar listPageStatsNavbar(context, {required final String listName}) {
           style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w700,
-              color: Colors.white.withOpacity(0.5)),
+              color: Colors.white.withValues(alpha: 0.5)),
         ),
       ],
     ),
@@ -26,7 +25,7 @@ AppBar listPageStatsNavbar(context, {required final String listName}) {
         onPressed: () {
           Navigator.pop(context);
         },
-        icon: const Icon(
+        icon: const FaIcon(
           FontAwesomeIcons.x,
           size: 17.5,
         )),

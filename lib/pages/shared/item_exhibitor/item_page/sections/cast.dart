@@ -4,7 +4,7 @@ import 'package:movielab/widgets/section_title.dart';
 
 class ItemPageCast extends StatelessWidget {
   final List actorList;
-  const ItemPageCast({Key? key, required this.actorList}) : super(key: key);
+  const ItemPageCast({super.key, required this.actorList});
 
   @override
   Widget build(BuildContext context) {

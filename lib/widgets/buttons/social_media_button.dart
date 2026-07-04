@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SocialMediaButton extends StatelessWidget {
-  final IconData icon;
+  final dynamic icon;
   final String url;
-  const SocialMediaButton({Key? key, required this.icon, required this.url})
-      : super(key: key);
+  const SocialMediaButton({super.key, required this.icon, required this.url});
   void _launchUrl() async {
     if (!await launchUrl(Uri.parse(url))) throw 'Could not launch $url';
   }
@@ -32,12 +32,18 @@ class SocialMediaButton extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(35),
               border: Border.all(
-                  color: Colors.white.withOpacity(0.75), width: 0.5)),
-          child: Icon(
-            icon,
-            color: Colors.white.withOpacity(0.75),
-            size: 20,
-          ),
+                  color: Colors.white.withValues(alpha: 0.75), width: 0.5)),
+          child: icon is IconData
+              ? Icon(
+                  icon as IconData,
+                  color: Colors.white.withValues(alpha: 0.75),
+                  size: 20,
+                )
+              : FaIcon(
+                  icon as FaIconData,
+                  color: Colors.white.withValues(alpha: 0.75),
+                  size: 20,
+                ),
         ),
       ),
     );

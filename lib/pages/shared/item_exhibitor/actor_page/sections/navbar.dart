@@ -4,9 +4,9 @@ import 'package:movielab/models/item_models/actor_models/full_actor_model.dart';
 class ActorPageNavBar extends StatefulWidget {
   final FullActor? actor;
   const ActorPageNavBar({
-    Key? key,
+    super.key,
     required this.actor,
-  }) : super(key: key);
+  });
 
   @override
   State<ActorPageNavBar> createState() => _ActorPageNavBarState();

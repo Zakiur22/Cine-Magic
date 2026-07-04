@@ -9,14 +9,14 @@ class TextFieldWidget extends StatefulWidget {
   final Function()? onTap;
 
   const TextFieldWidget({
-    Key? key,
+    super.key,
     this.maxLines = 1,
     required this.label,
     required this.text,
     required this.onChanged,
     this.errorText,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   TextFieldWidgetState createState() => TextFieldWidgetState();
@@ -50,7 +50,7 @@ class TextFieldWidgetState extends State<TextFieldWidget> {
           const SizedBox(height: 8),
           TextField(
               controller: controller,
-              style: TextStyle(color: Colors.white.withOpacity(0.8)),
+              style: TextStyle(color: Colors.white.withValues(alpha: 0.8)),
               decoration: InputDecoration(
                   errorText: widget.errorText != "" ? widget.errorText : null,
                   border: OutlineInputBorder(
@@ -58,7 +58,7 @@ class TextFieldWidgetState extends State<TextFieldWidget> {
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
-                        color: Colors.white.withOpacity(0.25), width: 2.0),
+                        color: Colors.white.withValues(alpha: 0.25), width: 2.0),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   focusedBorder: OutlineInputBorder(

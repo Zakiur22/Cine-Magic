@@ -6,7 +6,7 @@ import 'package:movielab/pages/main/home/sections/home_titles.dart';
 import 'package:movielab/widgets/buttons/glassmorphism_button.dart';
 
 class HomePopularGenres extends StatelessWidget {
-  const HomePopularGenres({Key? key, required this.title}) : super(key: key);
+  const HomePopularGenres({super.key, required this.title});
   final String title;
 
   @override
@@ -54,9 +54,9 @@ class HomePopularGenres extends StatelessWidget {
                                 context, GenrePage(genre: genres[index]));
                           },
                           backgroundColor: index >= kPrimaryColorSchemes.length
-                              ? kPrimaryColorSchemes[index - 7].withOpacity(0.5)
-                              : kPrimaryColorSchemes[index].withOpacity(0.5),
-                          color: Colors.white.withOpacity(0.9)));
+                              ? kPrimaryColorSchemes[index - 7].withValues(alpha: 0.5)
+                              : kPrimaryColorSchemes[index].withValues(alpha: 0.5),
+                          color: Colors.white.withValues(alpha: 0.9)));
                 },
               )),
         ],

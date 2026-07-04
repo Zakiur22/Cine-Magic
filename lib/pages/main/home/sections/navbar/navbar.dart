@@ -8,7 +8,7 @@ import 'package:movielab/pages/shared/about_page/about_page.dart';
 import 'package:movielab/pages/shared/app_name.dart';
 
 class HomeNavbar extends StatelessWidget {
-  const HomeNavbar({Key? key}) : super(key: key);
+  const HomeNavbar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class HomeNavbar extends StatelessWidget {
         color: kSecondaryColor,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: 1,
             offset: const Offset(0, 7.5),
           ),
@@ -51,7 +51,7 @@ class HomeNavbar extends StatelessWidget {
                   padding: EdgeInsets.zero,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(1000))),
-              child: const Icon(
+              child: const FaIcon(
                 FontAwesomeIcons.magnifyingGlass,
                 size: 22.5,
               ),

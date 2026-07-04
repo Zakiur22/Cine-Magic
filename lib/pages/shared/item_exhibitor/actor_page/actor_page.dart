@@ -24,7 +24,7 @@ import 'sections/navbar.dart';
 
 class ActorPage extends StatefulWidget {
   final String id;
-  const ActorPage({Key? key, required this.id}) : super(key: key);
+  const ActorPage({super.key, required this.id});
 
   @override
   State<ActorPage> createState() => _ActorPageState();
@@ -154,7 +154,7 @@ class _ActorPageState extends State<ActorPage> with TickerProviderStateMixin {
                 }
               },
               backgroundColor: kPrimaryColor,
-              child: Icon(
+              child: FaIcon(
                 isFavourite
                     ? FontAwesomeIcons.solidHeart
                     : FontAwesomeIcons.heart,

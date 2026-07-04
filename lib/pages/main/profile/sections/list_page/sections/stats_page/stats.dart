@@ -9,7 +9,7 @@ import 'package:movielab/pages/main/profile/sections/list_page/sections/stats_pa
 
 class ListStatsPage extends StatefulWidget {
   final String listName;
-  const ListStatsPage({Key? key, required this.listName}) : super(key: key);
+  const ListStatsPage({super.key, required this.listName});
 
   @override
   State<ListStatsPage> createState() => _ListStatsPageState();
@@ -52,7 +52,7 @@ class _ListStatsPageState extends State<ListStatsPage> {
                     Text(
                       "Items",
                       style: TextStyle(
-                          color: Colors.white.withOpacity(0.75),
+                          color: Colors.white.withValues(alpha: 0.75),
                           fontSize: 15,
                           fontWeight: FontWeight.w700),
                     ),
@@ -60,7 +60,7 @@ class _ListStatsPageState extends State<ListStatsPage> {
                       height: 15,
                     ),
                     Divider(
-                        color: kBlueColor.withOpacity(0.55), thickness: 7.5),
+                        color: kBlueColor.withValues(alpha: 0.55), thickness: 7.5),
                     const SizedBox(
                       height: 15,
                     ),
@@ -88,7 +88,7 @@ class _ListStatsPageState extends State<ListStatsPage> {
                           child: LinearProgressIndicator(
                             value: imdbRatingAverage / 10,
                             color: kImdbColor,
-                            backgroundColor: kImdbColor.withOpacity(0.15),
+                            backgroundColor: kImdbColor.withValues(alpha: 0.15),
                             minHeight: 13,
                           ),
                         )),
@@ -97,7 +97,7 @@ class _ListStatsPageState extends State<ListStatsPage> {
                     ),
                     Text("Avarage IMDb rating",
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.75),
+                          color: Colors.white.withValues(alpha: 0.75),
                           fontSize: 15,
                           fontWeight: FontWeight.w600,
                         )),
@@ -145,7 +145,7 @@ class _ListStatsPageState extends State<ListStatsPage> {
             }));
   }
 
-  getImdbRatingAverage() async {
+  Future<void> getImdbRatingAverage() async {
     PreferencesShareholder preferencesShareholder = PreferencesShareholder();
     List<ShowPreview> items =
         preferencesShareholder.getList(listName: widget.listName);

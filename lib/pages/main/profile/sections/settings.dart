@@ -7,7 +7,7 @@ import 'package:movielab/widgets/buttons_section.dart';
 import '../../../../widgets/section_title.dart';
 
 class ProfilePageSettings extends StatelessWidget {
-  const ProfilePageSettings({Key? key}) : super(key: key);
+  const ProfilePageSettings({super.key});
 
   @override
   Widget build(BuildContext context) {

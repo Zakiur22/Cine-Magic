@@ -11,7 +11,7 @@ import 'package:movielab/widgets/textfield_widget.dart';
 import 'sections/user_profile_image.dart';
 
 class ProfilePageEditUserProfile extends StatelessWidget {
-  const ProfilePageEditUserProfile({Key? key}) : super(key: key);
+  const ProfilePageEditUserProfile({super.key});
   Future<bool> _onWillPop() async {
     Get.find<ProfileController>()
         .updateTextFields(nameErrorText: "", usernameErrorText: "");

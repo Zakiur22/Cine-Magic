@@ -3,8 +3,7 @@ import 'package:movielab/constants/colors.dart';
 
 class InefficaciousRefreshIndicator extends StatelessWidget {
   final Widget child;
-  const InefficaciousRefreshIndicator({Key? key, required this.child})
-      : super(key: key);
+  const InefficaciousRefreshIndicator({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {

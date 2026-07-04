@@ -18,12 +18,11 @@ class ItemPopupActions extends StatefulWidget {
   final Future<dynamic> Function() updateStats;
   final Color backgroundColor;
   const ItemPopupActions(
-      {Key? key,
+      {super.key,
       required this.show,
       this.fullShow,
       required this.updateStats,
-      required this.backgroundColor})
-      : super(key: key);
+      required this.backgroundColor});
 
   @override
   State<ItemPopupActions> createState() => _ItemPopupActionsState();
@@ -60,7 +59,7 @@ class _ItemPopupActionsState extends State<ItemPopupActions>
             width: MediaQuery.of(context).size.width / 3,
             margin: const EdgeInsets.only(top: 20, bottom: 15),
             height: 3,
-            color: Colors.white.withOpacity(0.4),
+            color: Colors.white.withValues(alpha: 0.4),
           ),
           ActiveableButton(
               icon: FontAwesomeIcons.circle,
@@ -203,7 +202,7 @@ class _ItemPopupActionsState extends State<ItemPopupActions>
     }
   }
 
-  getShowListsInformation() async {
+  Future<void> getShowListsInformation() async {
     PreferencesShareholder preferencesShareholder = PreferencesShareholder();
     preferencesShareholder
         .isThereInLists(showId: widget.show.id)
@@ -214,7 +213,7 @@ class _ItemPopupActionsState extends State<ItemPopupActions>
             });
   }
 
-  _loadShowInfo() async {
+  Future<void> _loadShowInfo() async {
     await getItemInfo(id: widget.show.id, itemType: ItemType.SHOW)
         .then((value) {
       setState(() {

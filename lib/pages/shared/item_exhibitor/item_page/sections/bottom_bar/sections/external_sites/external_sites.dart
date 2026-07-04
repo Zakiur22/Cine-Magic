@@ -10,7 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class ItemPageExternalSites extends StatelessWidget {
   final FullShow show;
-  const ItemPageExternalSites({Key? key, required this.show}) : super(key: key);
+  const ItemPageExternalSites({super.key, required this.show});
   @override
   Widget build(BuildContext context) {
     final APIRequester apiRequester = APIRequester();
@@ -56,7 +56,7 @@ class ItemPageExternalSites extends StatelessWidget {
                                             title: "Discover",
                                             fontSize: 15,
                                             color:
-                                                Colors.white.withOpacity(0.75),
+                                                Colors.white.withValues(alpha: 0.75),
                                             padding: const EdgeInsets.symmetric(
                                                 vertical: 7.5, horizontal: 15),
                                           )
@@ -65,7 +65,7 @@ class ItemPageExternalSites extends StatelessWidget {
                                                 title: "Search",
                                                 fontSize: 15,
                                                 color: Colors.white
-                                                    .withOpacity(0.75),
+                                                    .withValues(alpha: 0.75),
                                                 padding:
                                                     const EdgeInsets.symmetric(
                                                         vertical: 7.5,

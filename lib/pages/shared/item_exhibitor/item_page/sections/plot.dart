@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:movielab/widgets/section_title.dart';
 
 class ItemPagePlot extends StatelessWidget {
   final String plot;
-  const ItemPagePlot({Key? key, required this.plot}) : super(key: key);
+  const ItemPagePlot({super.key, required this.plot});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +15,7 @@ class ItemPagePlot extends StatelessWidget {
           child: Text(plot,
               textAlign: TextAlign.justify,
               style: TextStyle(
-                  color: Colors.white.withOpacity(0.55),
+                  color: Colors.white.withValues(alpha: 0.55),
                   fontSize: 15,
                   fontWeight: FontWeight.w400)),
         ),

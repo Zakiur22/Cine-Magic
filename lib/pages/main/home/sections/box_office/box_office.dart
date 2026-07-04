@@ -8,7 +8,7 @@ import 'package:movielab/pages/main/home/sections/home_titles.dart';
 import 'box.dart';
 
 class HomeBoxOffice extends StatelessWidget {
-  const HomeBoxOffice({Key? key, required this.title}) : super(key: key);
+  const HomeBoxOffice({super.key, required this.title});
   final String title;
 
   @override

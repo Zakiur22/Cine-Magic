@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ActorPageTitle extends StatelessWidget {
   final String name;
-  const ActorPageTitle({Key? key, required this.name}) : super(key: key);
+  const ActorPageTitle({super.key, required this.name});
 
   @override
   Widget build(BuildContext context) {

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class GmButton extends StatelessWidget {
   const GmButton(
-      {Key? key,
+      {super.key,
       required this.text,
       this.icon,
       required this.onTap,
@@ -11,11 +12,10 @@ class GmButton extends StatelessWidget {
       this.backgroundColor,
       this.height = 35,
       this.width = 100,
-      this.padding = EdgeInsets.zero})
-      : super(key: key);
+      this.padding = EdgeInsets.zero});
 
   final String text;
-  final IconData? icon;
+  final dynamic icon;
   final VoidCallback onTap;
   final double radius;
   final Color color;
@@ -36,13 +36,15 @@ class GmButton extends StatelessWidget {
           height: height,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(radius),
-            color: backgroundColor ?? color.withOpacity(0.25),
+            color: backgroundColor ?? color.withValues(alpha: 0.25),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               icon != null
-                  ? Icon(icon, color: color, size: 15)
+                  ? (icon is IconData
+                      ? Icon(icon as IconData, color: color, size: 15)
+                      : FaIcon(icon as FaIconData, color: color, size: 15))
                   : const SizedBox.shrink(),
               icon != null
                   ? const SizedBox(

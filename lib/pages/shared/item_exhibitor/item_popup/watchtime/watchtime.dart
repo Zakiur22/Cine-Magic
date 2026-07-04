@@ -14,11 +14,11 @@ class AddWatchTime extends StatefulWidget {
   final Future<dynamic> Function() updateShowData;
   final Color backgroundColor;
   const AddWatchTime({
-    Key? key,
+    super.key,
     this.fullShow,
     required this.updateShowData,
     required this.backgroundColor,
-  }) : super(key: key);
+  });
   @override
   AddWatchTimeState createState() => AddWatchTimeState();
 }
@@ -58,7 +58,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
                 child: Text(
                   "When did you watch this?",
                   style: TextStyle(
-                      color: Colors.white.withOpacity(0.25),
+                      color: Colors.white.withValues(alpha: 0.25),
                       fontSize: 13.5,
                       fontWeight: FontWeight.bold),
                 ),
@@ -74,7 +74,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
                     const EdgeInsets.symmetric(horizontal: 25, vertical: 10)),
             child: Row(
               children: const [
-                Icon(
+                FaIcon(
                   FontAwesomeIcons.calendar,
                   color: Colors.white,
                 ),
@@ -105,7 +105,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
               children: [
                 Row(
                   children: const [
-                    Icon(
+                    FaIcon(
                       FontAwesomeIcons.film,
                       color: Colors.white,
                     ),
@@ -122,7 +122,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
                 Text(
                   widget.fullShow!.releaseDate,
                   style: TextStyle(
-                      color: Colors.white.withOpacity(0.5),
+                      color: Colors.white.withValues(alpha: 0.5),
                       fontSize: 10,
                       fontWeight: FontWeight.w700),
                 )
@@ -154,7 +154,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
               children: [
                 Row(
                   children: [
-                    Icon(
+                    FaIcon(
                       FontAwesomeIcons.penToSquare,
                       color:
                           !isOtherDateSectionOpen ? Colors.white : kAccentColor,
@@ -173,7 +173,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
                     )
                   ],
                 ),
-                Icon(
+                FaIcon(
                     !isOtherDateSectionOpen
                         ? FontAwesomeIcons.angleDown
                         : FontAwesomeIcons.angleUp,
@@ -202,12 +202,12 @@ class AddWatchTimeState extends State<AddWatchTime> {
                               decoration: InputDecoration(
                                   focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: Colors.white.withOpacity(0.5),
+                                        color: Colors.white.withValues(alpha: 0.5),
                                         width: 2),
                                   ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: Colors.white.withOpacity(0.5),
+                                        color: Colors.white.withValues(alpha: 0.5),
                                         width: 2),
                                   ),
                                   labelText: "Date",
@@ -216,7 +216,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
                                   floatingLabelBehavior:
                                       FloatingLabelBehavior.always,
                                   labelStyle: TextStyle(
-                                      color: Colors.white.withOpacity(0.5),
+                                      color: Colors.white.withValues(alpha: 0.5),
                                       fontWeight: FontWeight.w700),
                                   hintStyle: const TextStyle(
                                       fontWeight: FontWeight.w600)),
@@ -236,12 +236,12 @@ class AddWatchTimeState extends State<AddWatchTime> {
                               decoration: InputDecoration(
                                   focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: Colors.white.withOpacity(0.5),
+                                        color: Colors.white.withValues(alpha: 0.5),
                                         width: 2),
                                   ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: Colors.white.withOpacity(0.5),
+                                        color: Colors.white.withValues(alpha: 0.5),
                                         width: 2),
                                   ),
                                   labelText: "Date",
@@ -250,7 +250,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
                                   floatingLabelBehavior:
                                       FloatingLabelBehavior.always,
                                   labelStyle: TextStyle(
-                                      color: Colors.white.withOpacity(0.5),
+                                      color: Colors.white.withValues(alpha: 0.5),
                                       fontWeight: FontWeight.w700),
                                   hintStyle: const TextStyle(
                                       fontWeight: FontWeight.w600)),
@@ -275,7 +275,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
                                 showDateSelector = false;
                               });
                             },
-                            backgroundColor: kAccentColor.withOpacity(0.75),
+                            backgroundColor: kAccentColor.withValues(alpha: 0.75),
                             color: Colors.white)
                       ],
                     )
@@ -294,7 +294,6 @@ class AddWatchTimeState extends State<AddWatchTime> {
         builder: (BuildContext context, child) {
           return Theme(
               data: Theme.of(context).copyWith(
-                dialogBackgroundColor: kSecondaryColor,
                 primaryColor: kPrimaryColor,
                 colorScheme: const ColorScheme.light(
                   primary: kPrimaryColor,
@@ -305,7 +304,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
                   style: TextButton.styleFrom(
                     foregroundColor: kPrimaryColor,
                   ),
-                ),
+                ), dialogTheme: DialogThemeData(backgroundColor: kSecondaryColor),
               ),
               child: child!);
         },
@@ -353,7 +352,7 @@ class AddWatchTimeState extends State<AddWatchTime> {
   }
 
   // Add the item to the History list
-  markAsWatched({required DateTime date, required TimeOfDay time}) async {
+  Future<void> markAsWatched({required DateTime date, required TimeOfDay time}) async {
     _preferencesShareholder.addShowToList(
         showPreview: convertFullShowToShowPreview(fullShow: widget.fullShow!),
         listName: "history",

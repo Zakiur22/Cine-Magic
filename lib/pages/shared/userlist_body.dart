@@ -19,7 +19,7 @@ import 'package:ms_undraw/ms_undraw.dart';
 import 'item_exhibitor/item_box/lists_item_box.dart';
 
 class UserListBody extends StatefulWidget {
-  const UserListBody({Key? key, required this.listName}) : super(key: key);
+  const UserListBody({super.key, required this.listName});
   final String listName;
 
   @override

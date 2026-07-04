@@ -14,7 +14,7 @@ import 'sections/imdb_rating.dart';
 import 'sections/user_profile_image.dart';
 
 class ProfilePageUserProfile extends StatelessWidget {
-  ProfilePageUserProfile({Key? key}) : super(key: key);
+  ProfilePageUserProfile({super.key});
   late List<ShowPreview> items;
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class ProfilePageUserProfile extends StatelessWidget {
                   Text(
                     _.username,
                     style: TextStyle(
-                      color: Colors.white.withOpacity(0.5),
+                      color: Colors.white.withValues(alpha: 0.5),
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -136,7 +136,7 @@ class ProfilePageUserProfile extends StatelessWidget {
                             text: '',
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Colors.white.withOpacity(0.75),
+                              color: Colors.white.withValues(alpha: 0.75),
                             ),
                             children: <TextSpan>[
                               const TextSpan(text: 'See ', style: TextStyle()),
@@ -144,7 +144,7 @@ class ProfilePageUserProfile extends StatelessWidget {
                                   text: _.name,
                                   style: TextStyle(
                                       fontWeight: FontWeight.w700,
-                                      color: Colors.white.withOpacity(0.9))),
+                                      color: Colors.white.withValues(alpha: 0.9))),
                               const TextSpan(
                                   text: '\'s stats', style: TextStyle()),
                             ],

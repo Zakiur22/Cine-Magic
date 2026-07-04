@@ -3,7 +3,7 @@ import 'package:movielab/constants/types.dart';
 import 'package:movielab/modules/api/api_requester.dart';
 import 'package:movielab/pages/main/search/search_bar/search_bar_controller.dart';
 
-doSearch() async {
+Future<void> doSearch() async {
   final searchBarController = Get.find<SearchBarController>();
   searchBarController.setLoadingStatus(status: RequestResult.LOADING);
   try {

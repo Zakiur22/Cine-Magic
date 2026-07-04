@@ -8,7 +8,7 @@ import 'voice_search.dart';
 import 'search_bar_controller.dart';
 
 class SearchBar extends StatelessWidget {
-  const SearchBar({Key? key}) : super(key: key);
+  const SearchBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class SearchBar extends StatelessWidget {
         height: 60,
         margin: const EdgeInsets.only(left: 5, right: 5),
         decoration: BoxDecoration(
-          color: kBackgroundColor.withOpacity(0.4),
+          color: kBackgroundColor.withValues(alpha: 0.4),
           borderRadius: BorderRadius.circular(30),
         ),
         child: Row(
@@ -31,7 +31,7 @@ class SearchBar extends StatelessWidget {
               },
               child: const Padding(
                 padding: EdgeInsets.only(left: 15, right: 10),
-                child: Icon(
+                child: FaIcon(
                   FontAwesomeIcons.magnifyingGlass,
                   size: 20,
                 ),
@@ -85,7 +85,7 @@ class SearchBar extends StatelessWidget {
                     },
                     icon: const Padding(
                       padding: EdgeInsets.only(right: 15, left: 5),
-                      child: Icon(
+                      child: FaIcon(
                         FontAwesomeIcons.microphoneLines,
                         size: 22.5,
                       ),

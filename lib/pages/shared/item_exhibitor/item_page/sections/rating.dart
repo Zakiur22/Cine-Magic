@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:movielab/constants/colors.dart';
 
 class ItemPageRating extends StatelessWidget {
   final String imDbRating;
   final String imDbVotes;
   const ItemPageRating(
-      {Key? key, required this.imDbRating, required this.imDbVotes})
-      : super(key: key);
+      {super.key, required this.imDbRating, required this.imDbVotes});
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +44,7 @@ class ItemPageRating extends StatelessWidget {
             child: Text("$imDbVotes votes",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: Colors.white.withOpacity(0.6),
+                    color: Colors.white.withValues(alpha: 0.6),
                     fontSize: 14,
                     fontWeight: FontWeight.w600)),
           ),

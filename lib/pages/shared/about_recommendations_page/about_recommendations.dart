@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:movielab/constants/colors.dart';
 
 class AboutRecommendationsPage extends StatelessWidget {
-  const AboutRecommendationsPage({Key? key}) : super(key: key);
+  const AboutRecommendationsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class AboutRecommendationsPage extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: const Icon(
+            icon: const FaIcon(
               FontAwesomeIcons.x,
               color: Colors.white,
               size: 17.5,
@@ -49,12 +49,12 @@ class AboutRecommendationsPage extends StatelessWidget {
                               horizontal: 10, vertical: 10),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: kBackgroundColor.withOpacity(0.5)),
+                              color: kBackgroundColor.withValues(alpha: 0.5)),
                           child: Text(
                             "What are these recommendations based on?",
                             style: TextStyle(
                                 fontSize: 17.5,
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.white.withValues(alpha: 0.5),
                                 fontWeight: FontWeight.w700),
                           ),
                         ),
@@ -81,5 +81,5 @@ class AboutRecommendationsPage extends StatelessWidget {
     );
   }
 
-  widget({required Text child}) {}
+  void widget({required Text child}) {}
 }

@@ -16,7 +16,7 @@ class BubbleTimeline extends StatefulWidget {
   /// Use same color as used for Scaffold background.
   final Color scaffoldColor;
 
-  const BubbleTimeline({
+  const BubbleTimeline({super.key, 
     required this.bubbleDiameter,
     required this.items,
     required this.stripColor,
@@ -72,7 +72,7 @@ class _BubbleTimelineState extends State<BubbleTimeline> {
 
 class TopHandle extends StatelessWidget {
   final Color handleColor;
-  const TopHandle(this.handleColor);
+  const TopHandle(this.handleColor, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +97,7 @@ class TopHandle extends StatelessWidget {
 
 class BottomHandle extends StatelessWidget {
   final Color handleColor;
-  const BottomHandle(this.handleColor);
+  const BottomHandle(this.handleColor, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -131,7 +131,7 @@ class TimelineBubble extends StatelessWidget {
   final Color bgColor;
   final Color bubbleColor;
 
-  const TimelineBubble({
+  const TimelineBubble({super.key, 
     required this.direction,
     required this.size,
     required this.title,
@@ -159,24 +159,24 @@ class TimelineBubble extends StatelessWidget {
                       ),
                       textAlign: TextAlign.right,
                     ),
-                    if (subtitle != null) ...[
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        subtitle,
-                        textAlign: TextAlign.right,
-                      ),
-                    ],
-                    if (description != null) ...[
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        description,
-                        textAlign: TextAlign.right,
-                      ),
-                    ],
+                    ...[
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      subtitle,
+                      textAlign: TextAlign.right,
+                    ),
+                  ],
+                    ...[
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      description,
+                      textAlign: TextAlign.right,
+                    ),
+                  ],
                   ]
                 : [],
           ),
@@ -247,24 +247,24 @@ class TimelineBubble extends StatelessWidget {
                       ),
                       textAlign: TextAlign.left,
                     ),
-                    if (subtitle != null) ...[
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        subtitle,
-                        textAlign: TextAlign.left,
-                      ),
-                    ],
-                    if (description != null) ...[
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        description,
-                        textAlign: TextAlign.left,
-                      ),
-                    ],
+                    ...[
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      subtitle,
+                      textAlign: TextAlign.left,
+                    ),
+                  ],
+                    ...[
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      description,
+                      textAlign: TextAlign.left,
+                    ),
+                  ],
                   ]
                 : [],
           ),

@@ -8,8 +8,7 @@ import 'package:movielab/widgets/section_title.dart';
 class ItemPageMedia extends StatelessWidget {
   final List images;
   final List<PosterData> posters;
-  const ItemPageMedia({Key? key, required this.images, required this.posters})
-      : super(key: key);
+  const ItemPageMedia({super.key, required this.images, required this.posters});
 
   @override
   Widget build(BuildContext context) {

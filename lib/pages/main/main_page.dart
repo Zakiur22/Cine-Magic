@@ -11,7 +11,7 @@ import 'search/search_page.dart';
 import 'profile/profile.dart';
 
 class MainPage extends StatelessWidget {
-  const MainPage({Key? key}) : super(key: key);
+  const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class MainPage extends StatelessWidget {
           height: 70,
           shadows: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.75),
+              color: Colors.black.withValues(alpha: 0.75),
               blurRadius: 7.5,
               offset: const Offset(0, 0),
             ),

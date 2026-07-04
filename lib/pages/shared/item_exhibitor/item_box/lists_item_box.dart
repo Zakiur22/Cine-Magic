@@ -22,13 +22,13 @@ class ListItemBox extends StatelessWidget {
   final double? width;
   final ItemSuit? showType;
   ListItemBox({
-    Key? key,
+    super.key,
     this.showPreview,
     required this.listName,
     this.width,
     this.showType,
     this.actorPreview,
-  }) : super(key: key);
+  });
   late FToast fToast;
 
   @override

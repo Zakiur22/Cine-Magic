@@ -7,7 +7,7 @@ import 'package:movielab/pages/shared/item_exhibitor/item_box/item_box_common.da
 
 class CompressedActorBox extends StatelessWidget {
   final ActorPreview actor;
-  const CompressedActorBox({Key? key, required this.actor}) : super(key: key);
+  const CompressedActorBox({super.key, required this.actor});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class CompressedActorBox extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   softWrap: true,
                   style: TextStyle(
-                      color: Colors.white.withOpacity(0.8),
+                      color: Colors.white.withValues(alpha: 0.8),
                       fontSize: 11,
                       fontWeight: FontWeight.w600)),
             ),
@@ -50,7 +50,7 @@ class CompressedActorBox extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 softWrap: true,
                 style: TextStyle(
-                    color: Colors.white.withOpacity(0.5),
+                    color: Colors.white.withValues(alpha: 0.5),
                     fontSize: 10,
                     fontWeight: FontWeight.w500)),
           ],

@@ -6,8 +6,7 @@ import 'package:movielab/pages/shared/item_exhibitor/item_box/lists_item_box.dar
 import 'package:timeline_tile/timeline_tile.dart';
 
 class TimelineSteps extends StatelessWidget {
-  const TimelineSteps({Key? key, required this.steps, required this.watchDates})
-      : super(key: key);
+  const TimelineSteps({super.key, required this.steps, required this.watchDates});
 
   final List<ListItemBox> steps;
   final List<DateTime?> watchDates;
@@ -75,8 +74,7 @@ class TimelineSteps extends StatelessWidget {
 }
 
 class _TimelineStepIndicator extends StatelessWidget {
-  const _TimelineStepIndicator({Key? key, required this.step})
-      : super(key: key);
+  const _TimelineStepIndicator({required this.step});
 
   final String step;
 
@@ -101,10 +99,9 @@ class _TimelineStepIndicator extends StatelessWidget {
 
 class _TimelineStepsChild extends StatelessWidget {
   const _TimelineStepsChild({
-    Key? key,
     required this.isLeftAlign,
     required this.step,
-  }) : super(key: key);
+  });
 
   final ListItemBox step;
   final bool isLeftAlign;

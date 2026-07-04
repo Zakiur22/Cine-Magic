@@ -7,7 +7,7 @@ import 'package:movielab/widgets/buttons/social_media_button.dart';
 import 'package:movielab/widgets/default_appbar.dart';
 
 class AboutPage extends StatelessWidget {
-  const AboutPage({Key? key}) : super(key: key);
+  const AboutPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class AboutPage extends StatelessWidget {
               "Version ${appVersion.replaceAll('v', '')}",
               style: TextStyle(
                   fontSize: 17.5,
-                  color: Colors.white.withOpacity(0.5),
+                  color: Colors.white.withValues(alpha: 0.5),
                   fontWeight: FontWeight.w700),
             ),
             const SizedBox(
@@ -74,7 +74,7 @@ class AboutPage extends StatelessWidget {
                         "Developed and designed by",
                         style: TextStyle(
                             fontSize: 14.5,
-                            color: Colors.white.withOpacity(0.5),
+                            color: Colors.white.withValues(alpha: 0.5),
                             fontWeight: FontWeight.w600),
                       ),
                       const SizedBox(

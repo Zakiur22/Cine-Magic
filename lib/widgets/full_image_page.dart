@@ -10,8 +10,7 @@ import 'package:movielab/widgets/toast.dart';
 import 'package:share_plus/share_plus.dart';
 
 class FullImagePage extends StatefulWidget {
-  const FullImagePage({Key? key, required this.imageUrl, this.tag})
-      : super(key: key);
+  const FullImagePage({super.key, required this.imageUrl, this.tag});
   final String? tag;
   final String imageUrl;
 
@@ -43,7 +42,7 @@ class _FullImagePageState extends State<FullImagePage> {
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.4),
+                      color: Colors.black.withValues(alpha: 0.4),
                       borderRadius: BorderRadius.circular(25),
                     ),
                     child: IconButton(
@@ -60,7 +59,7 @@ class _FullImagePageState extends State<FullImagePage> {
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.4),
+                          color: Colors.black.withValues(alpha: 0.4),
                           borderRadius: BorderRadius.circular(25),
                         ),
                         child: IconButton(
@@ -93,7 +92,7 @@ class _FullImagePageState extends State<FullImagePage> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.4),
+                          color: Colors.black.withValues(alpha: 0.4),
                           borderRadius: BorderRadius.circular(25),
                         ),
                         child: IconButton(
@@ -119,7 +118,7 @@ class _FullImagePageState extends State<FullImagePage> {
   }
 }
 
-downloadImage(BuildContext context, {required final String imageUrl}) async {
+Future<void> downloadImage(BuildContext context, {required final String imageUrl}) async {
   try {
     LoadingUtils(context).startLoading();
     await GallerySaver.saveImage(

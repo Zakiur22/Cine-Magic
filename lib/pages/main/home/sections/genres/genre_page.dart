@@ -11,7 +11,7 @@ import 'package:movielab/pages/shared/item_exhibitor/item_box/expanded_item_box/
 import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
 
 class GenrePage extends StatefulWidget {
-  const GenrePage({Key? key, required this.genre}) : super(key: key);
+  const GenrePage({super.key, required this.genre});
   final String genre;
 
   @override
@@ -38,7 +38,7 @@ class _GenrePageState extends State<GenrePage> {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: const Icon(
+                  icon: const FaIcon(
                     FontAwesomeIcons.arrowLeft,
                     color: Colors.white,
                     size: 22.5,
@@ -83,7 +83,7 @@ class _GenrePageState extends State<GenrePage> {
     );
   }
 
-  getItems() {
+  void getItems() {
     APIRequester apiRequester = APIRequester();
     apiRequester.getGenreItems(genre: widget.genre).then((value) {
       setState(() {

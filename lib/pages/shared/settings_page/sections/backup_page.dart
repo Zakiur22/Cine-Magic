@@ -9,7 +9,7 @@ import 'package:movielab/widgets/toast.dart';
 import '../settings_page.dart';
 
 class BackupPage extends StatefulWidget {
-  const BackupPage({Key? key}) : super(key: key);
+  const BackupPage({super.key});
 
   @override
   State<BackupPage> createState() => _BackupPageState();

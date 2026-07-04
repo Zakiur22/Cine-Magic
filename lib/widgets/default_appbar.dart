@@ -12,7 +12,7 @@ AppBar defaultAppBar(BuildContext context, {required final String title}) {
         onPressed: () {
           Navigator.pop(context);
         },
-        icon: const Icon(
+        icon: const FaIcon(
           FontAwesomeIcons.x,
           size: 17.5,
         )),

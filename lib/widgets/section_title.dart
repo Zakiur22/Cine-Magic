@@ -7,13 +7,12 @@ class SectionTitle extends StatelessWidget {
   final FontWeight fontWeight;
   final Color color;
   const SectionTitle(
-      {Key? key,
+      {super.key,
       required this.title,
       this.fontSize = 19,
       this.fontWeight = FontWeight.w700,
       this.padding = const EdgeInsets.only(left: 10, right: 10, bottom: 12.5),
-      this.color = Colors.white})
-      : super(key: key);
+      this.color = Colors.white});
 
   @override
   Widget build(BuildContext context) {

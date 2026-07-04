@@ -7,13 +7,12 @@ class ItemPageMainInfo extends StatelessWidget {
   final String contentRating;
   final String countries;
   const ItemPageMainInfo(
-      {Key? key,
+      {super.key,
       required this.year,
       required this.genres,
       required this.runTime,
       required this.contentRating,
-      required this.countries})
-      : super(key: key);
+      required this.countries});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +27,7 @@ class ItemPageMainInfo extends StatelessWidget {
                     : "$year • $genres • $countries",
             textAlign: TextAlign.center,
             style: TextStyle(
-                color: Colors.white.withOpacity(0.7),
+                color: Colors.white.withValues(alpha: 0.7),
                 fontSize: 15,
                 fontWeight: FontWeight.w700)),
       ),

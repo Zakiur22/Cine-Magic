@@ -15,7 +15,7 @@ import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
 import 'package:ms_undraw/ms_undraw.dart';
 
 class SearchPage extends StatelessWidget {
-  const SearchPage({Key? key}) : super(key: key);
+  const SearchPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +30,9 @@ class SearchPage extends StatelessWidget {
               elevation: 1.0,
               title: const SearchBar(),
               bottom: TabBar(
-                unselectedLabelColor: Colors.white.withOpacity(0.4),
+                unselectedLabelColor: Colors.white.withValues(alpha: 0.4),
                 splashFactory: NoSplash.splashFactory,
-                overlayColor: MaterialStateColor.resolveWith(
+                overlayColor: WidgetStateColor.resolveWith(
                     (states) => Colors.transparent),
                 physics: const BouncingScrollPhysics(),
                 indicatorColor: Colors.white,
@@ -164,7 +164,7 @@ class SearchPage extends StatelessWidget {
                     Text("No result found",
                         style: TextStyle(
                             fontSize: 20,
-                            color: Colors.white.withOpacity(0.7),
+                            color: Colors.white.withValues(alpha: 0.7),
                             fontWeight: FontWeight.w700)),
                     const SizedBox(
                       height: 15,
@@ -174,7 +174,7 @@ class SearchPage extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 15,
-                            color: Colors.white.withOpacity(0.7),
+                            color: Colors.white.withValues(alpha: 0.7),
                             fontWeight: FontWeight.w600))
                   ],
                 ),

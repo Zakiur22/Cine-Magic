@@ -10,8 +10,7 @@ class HomeTrendingsBuilder extends StatelessWidget {
   final List<ShowPreview> trendings;
   final String title;
   const HomeTrendingsBuilder(
-      {Key? key, required this.trendings, required this.title})
-      : super(key: key);
+      {super.key, required this.trendings, required this.title});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -38,7 +37,7 @@ class HomeTrendingsBuilder extends StatelessWidget {
                   child: Text(
                     'Show All',
                     style: TextStyle(
-                        color: Colors.white.withOpacity(0.75),
+                        color: Colors.white.withValues(alpha: 0.75),
                         fontSize: 15,
                         fontWeight: FontWeight.w500),
                   ),

@@ -8,7 +8,7 @@ import '../../../../../modules/tools/navigate.dart';
 import 'box.dart';
 
 class HomeIMDbLists extends StatelessWidget {
-  const HomeIMDbLists({Key? key, required this.title}) : super(key: key);
+  const HomeIMDbLists({super.key, required this.title});
   final String title;
   @override
   Widget build(BuildContext context) {

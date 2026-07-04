@@ -7,7 +7,7 @@ import 'package:movielab/modules/tools/capitalizer.dart';
 import 'package:movielab/widgets/section_title.dart';
 
 class ProfilePageLists extends StatelessWidget {
-  const ProfilePageLists({Key? key}) : super(key: key);
+  const ProfilePageLists({super.key});
 
   @override
   Widget build(BuildContext context) {

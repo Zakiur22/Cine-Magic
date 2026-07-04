@@ -4,7 +4,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:movielab/modules/tools/navigate.dart';
 import 'package:movielab/pages/shared/item_exhibitor/item_page/item_page.dart';
 
-openItemPage(BuildContext context,
+void openItemPage(BuildContext context,
     {required final String id, final String preTag = ""}) {
   Navigate.pushHeroicTo(
       context,
@@ -29,7 +29,7 @@ Widget boxImage(
     height: height,
     decoration: BoxDecoration(boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.10),
+        color: Colors.black.withValues(alpha: 0.10),
         blurRadius: 2,
         offset: const Offset(0, 0),
       )
@@ -64,7 +64,7 @@ Widget itemBoxText(
     maxLines: isItTitle ? 1 : 2,
     style: TextStyle(
         color:
-            color ?? (isItTitle ? Colors.white : Colors.white.withOpacity(0.7)),
+            color ?? (isItTitle ? Colors.white : Colors.white.withValues(alpha: 0.7)),
         fontSize: fontSize,
         fontWeight: fontWeight),
   );

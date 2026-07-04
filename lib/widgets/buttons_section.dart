@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movielab/constants/colors.dart';
 import 'package:movielab/widgets/section_title.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ButtonsSection extends StatelessWidget {
   final double height;
@@ -10,13 +11,12 @@ class ButtonsSection extends StatelessWidget {
   final Color backgroundColor;
   final List<ButtonSectionItem> items;
   const ButtonsSection(
-      {Key? key,
+      {super.key,
       this.height = 0,
       this.width = double.infinity,
       required this.items,
       this.backgroundColor = const Color(0xff132D4E),
-      this.borderRadius = 15})
-      : super(key: key);
+      this.borderRadius = 15});
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +112,7 @@ class ButtonsSection extends StatelessWidget {
 
 class ButtonSectionItem {
   final String title;
-  final IconData icon;
+  final dynamic icon;
   final Color iconColor;
   final VoidCallback? onPressed;
   final EdgeInsets iconPadding;
@@ -134,9 +134,15 @@ Widget buttonSectionIcon(
       decoration: BoxDecoration(
           color: item.iconColor, borderRadius: BorderRadius.circular(15)),
       child: Center(
-          child: Icon(
-        item.icon,
-        size: size / 2,
-        color: Colors.white,
-      )),
+          child: item.icon is IconData
+              ? Icon(
+                  item.icon as IconData,
+                  size: size / 2,
+                  color: Colors.white,
+                )
+              : FaIcon(
+                  item.icon as FaIconData,
+                  size: size / 2,
+                  color: Colors.white,
+                )),
     );

@@ -7,8 +7,7 @@ class EpisodeGuideSeasonEpisodes extends StatelessWidget {
   final int season;
   final dynamic show;
   const EpisodeGuideSeasonEpisodes(
-      {Key? key, required this.season, required this.show})
-      : super(key: key);
+      {super.key, required this.season, required this.show});
 
   @override
   Widget build(BuildContext context) {

@@ -7,17 +7,17 @@ class CacheData extends GetxController {
   List<FullActor> actorsData = [];
   List<Map> companiesData = [];
 
-  addShowData({required FullShow show}) {
+  void addShowData({required FullShow show}) {
     showsData.add(show);
     update();
   }
 
-  addActorData({required FullActor actor}) {
+  void addActorData({required FullActor actor}) {
     actorsData.add(actor);
     update();
   }
 
-  addCompanyData({required Map company}) {
+  void addCompanyData({required Map company}) {
     companiesData.add(company);
     update();
   }

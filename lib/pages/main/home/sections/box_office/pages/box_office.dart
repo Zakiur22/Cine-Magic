@@ -9,7 +9,7 @@ import 'package:movielab/pages/shared/item_exhibitor/item_box/expanded_item_box/
 import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
 
 class BoxOfficePAge extends StatelessWidget {
-  const BoxOfficePAge({Key? key}) : super(key: key);
+  const BoxOfficePAge({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class BoxOfficePAge extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: const Icon(
+                  icon: const FaIcon(
                     FontAwesomeIcons.arrowLeft,
                     color: Colors.white,
                     size: 22.5,

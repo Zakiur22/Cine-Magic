@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class OtherRatingsBox extends StatelessWidget {
   const OtherRatingsBox(
-      {Key? key, required this.rating, required this.name, required this.max})
-      : super(key: key);
+      {super.key, required this.rating, required this.name, required this.max});
   final double rating;
   final int max;
   final String name;

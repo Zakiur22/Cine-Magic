@@ -5,7 +5,7 @@ class MainController extends GetxController {
   // Main page bottom navigation bar page index controller
   int selectedIndex = 0;
 
-  changeIndex(int index) {
+  void changeIndex(int index) {
     // If user select a page that is already selected, page should be scroll to top
     if (index == selectedIndex) {
       if (index == 0) {
@@ -51,7 +51,7 @@ class MainController extends GetxController {
   // Active API key controller
   int activeApiKey = 0;
 
-  changeActiveApiKey(int index) {
+  void changeActiveApiKey(int index) {
     activeApiKey = index;
     update();
   }

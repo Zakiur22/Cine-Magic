@@ -11,8 +11,7 @@ class CompressedItemBox extends StatefulWidget {
   final ShowPreview showPreview;
   final String preTag;
   const CompressedItemBox(
-      {Key? key, required this.showPreview, this.preTag = ""})
-      : super(key: key);
+      {super.key, required this.showPreview, this.preTag = ""});
 
   @override
   State<CompressedItemBox> createState() => _CompressedItemBoxState();
@@ -80,7 +79,7 @@ class _CompressedItemBoxState extends State<CompressedItemBox>
                             width: 30,
                             height: 17.5,
                             decoration: BoxDecoration(
-                                color: Colors.black.withOpacity(0.5),
+                                color: Colors.black.withValues(alpha: 0.5),
                                 borderRadius: BorderRadius.circular(5.5)),
                             child: Center(
                               child: Text(

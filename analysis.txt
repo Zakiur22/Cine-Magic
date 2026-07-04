@@ -1,0 +1,51 @@
+Analyzing MovieLab...                                           
+
+warning • Unused import: 'package:movielab/models/hive/models/show_preview.dart'. Try removing the import directive • lib/modules/preferences/backup.dart:7:8 • unused_import
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/main/home/home_page.dart:143:9 • use_build_context_synchronously
+   info • The file name 'top_TVs.dart' isn't a lower_case_with_underscores identifier. Try changing the name to follow the lower_case_with_underscores style • lib/pages/main/home/sections/imdb_lists/pages/top_TVs.dart:1:1 • file_names
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/main/home/sections/navbar/navbar.dart:36:31 • use_build_context_synchronously
+   info • The variable name 'UserListsNavbar' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/pages/main/lists/sections/navbar.dart:4:8 • non_constant_identifier_names
+   info • Missing type annotation. Try adding a type annotation • lib/pages/main/profile/sections/list_page/sections/navbar.dart:8:23 • strict_top_level_inference
+   info • Missing type annotation. Try adding a type annotation • lib/pages/main/profile/sections/list_page/sections/stats_page/sections/navbar.dart:5:28 • strict_top_level_inference
+   info • 'WillPopScope' is deprecated and shouldn't be used. Use PopScope instead. The Android predictive back feature will not work with WillPopScope. This feature was deprecated after v3.12.0-1.0.pre. Try replacing the use of the deprecated member with the replacement • lib/pages/main/profile/sections/user_profile/edit_user_profile.dart:24:12 • deprecated_member_use
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: ProfilePageUserProfile.items • lib/pages/main/profile/sections/user_profile/user_profile.dart:16:7 • must_be_immutable
+   info • Missing type annotation. Try adding a type annotation • lib/pages/main/search/search_bar/search_bar_controller.dart:26:22 • strict_top_level_inference
+   info • Missing type annotation. Try adding a type annotation • lib/pages/main/search/search_bar/search_bar_controller.dart:26:35 • strict_top_level_inference
+   info • Missing type annotation. Try adding a type annotation • lib/pages/main/search/search_bar/search_bar_controller.dart:26:49 • strict_top_level_inference
+   info • Missing type annotation. Try adding a type annotation • lib/pages/main/search/search_page.dart:83:21 • strict_top_level_inference
+   info • Missing type annotation. Try adding a type annotation • lib/pages/main/search/search_page.dart:83:26 • strict_top_level_inference
+   info • Missing type annotation. Try adding a type annotation • lib/pages/main/search/search_page.dart:83:34 • strict_top_level_inference
+warning • Dead code. Try removing the code, or fixing the code before it so that it can be reached • lib/pages/main/search/search_page.dart:182:9 • dead_code
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: ActorPageBottomBar.fToast • lib/pages/shared/item_exhibitor/actor_page/sections/bottom_bar.dart:7:7 • must_be_immutable
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/shared/item_exhibitor/item_box/compressed_item_box/compressed_item_box.dart:38:11 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/shared/item_exhibitor/item_box/expanded_item_box/expanded_item_box.dart:53:17 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/shared/item_exhibitor/item_box/expanded_item_box/expanded_item_box.dart:215:39 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/shared/item_exhibitor/item_popup/show_list_popup_actions.dart:184:21 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/shared/item_exhibitor/item_popup/show_list_popup_actions.dart:187:11 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/shared/settings_page/sections/backup_page.dart:70:35 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/shared/settings_page/settings_page.dart:54:35 • use_build_context_synchronously
+   info • The file name 'get_Initial_data.dart' isn't a lower_case_with_underscores identifier. Try changing the name to follow the lower_case_with_underscores style • lib/pages/splash/get_Initial_data.dart:1:1 • file_names
+warning • The value of the local variable 'genresLength' isn't used. Try removing the variable or using it • lib/pages/splash/get_user_data.dart:61:9 • unused_local_variable
+warning • The value of the local variable 'genresOthers' isn't used. Try removing the variable or using it • lib/pages/splash/get_user_data.dart:62:9 • unused_local_variable
+warning • The value of the local variable 'countriesLength' isn't used. Try removing the variable or using it • lib/pages/splash/get_user_data.dart:85:9 • unused_local_variable
+warning • The value of the local variable 'countriesOthers' isn't used. Try removing the variable or using it • lib/pages/splash/get_user_data.dart:86:9 • unused_local_variable
+warning • The value of the local variable 'languagesLength' isn't used. Try removing the variable or using it • lib/pages/splash/get_user_data.dart:110:9 • unused_local_variable
+warning • The value of the local variable 'languagesOthers' isn't used. Try removing the variable or using it • lib/pages/splash/get_user_data.dart:111:9 • unused_local_variable
+warning • The value of the local variable 'companiesLength' isn't used. Try removing the variable or using it • lib/pages/splash/get_user_data.dart:134:9 • unused_local_variable
+warning • The value of the local variable 'companiesOthers' isn't used. Try removing the variable or using it • lib/pages/splash/get_user_data.dart:135:9 • unused_local_variable
+warning • The value of the local variable 'contentRatingsLength' isn't used. Try removing the variable or using it • lib/pages/splash/get_user_data.dart:158:9 • unused_local_variable
+warning • The value of the local variable 'contentRatingsOthers' isn't used. Try removing the variable or using it • lib/pages/splash/get_user_data.dart:159:9 • unused_local_variable
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/splash/splash_screen.dart:108:32 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/pages/splash/splash_screen.dart:115:30 • use_build_context_synchronously
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: ActiveableButton.tapped • lib/widgets/buttons/activeable_button.dart:4:7 • must_be_immutable
+   info • 'shareFiles' is deprecated and shouldn't be used. Use shareXFiles instead. Try replacing the use of the deprecated member with the replacement • lib/widgets/full_image_page.dart:73:43 • deprecated_member_use
+   info • 'shareFiles' is deprecated and shouldn't be used. Use shareXFiles instead. Try replacing the use of the deprecated member with the replacement • lib/widgets/full_image_page.dart:80:43 • deprecated_member_use
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/widgets/full_image_page.dart:128:24 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/widgets/full_image_page.dart:129:24 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/widgets/full_image_page.dart:135:18 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/widgets/full_image_page.dart:136:18 • use_build_context_synchronously
+   info • Invalid use of a private type in a public API. Try making the private type public, or making the API that uses the private type also be private • lib/widgets/timeline.dart:27:3 • library_private_types_in_public_api
+   info • Unnecessary instance of 'Container'. Try removing the 'Container' (but not its children) from the widget tree • lib/widgets/timeline.dart:184:9 • avoid_unnecessary_containers
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: ToastWidget.fToast • lib/widgets/toast.dart:6:7 • must_be_immutable
+   info • Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check • lib/widgets/toast.dart:67:29 • use_build_context_synchronously
+

@@ -9,7 +9,7 @@ import 'package:movielab/pages/main/profile/sections/list_page/sections/stats_pa
 import 'package:movielab/pages/main/profile/sections/user_profile/user_profile.dart';
 
 class UserStatsPage extends StatelessWidget {
-  const UserStatsPage({Key? key}) : super(key: key);
+  const UserStatsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class UserStatsPage extends StatelessWidget {
                       child: LinearProgressIndicator(
                         value: _.imdbRatingAverage / 10,
                         color: kImdbColor,
-                        backgroundColor: kImdbColor.withOpacity(0.15),
+                        backgroundColor: kImdbColor.withValues(alpha: 0.15),
                         minHeight: 13,
                       ),
                     )),
@@ -60,7 +60,7 @@ class UserStatsPage extends StatelessWidget {
                 ),
                 Text("Avarage IMDb rating",
                     style: TextStyle(
-                      color: Colors.white.withOpacity(0.75),
+                      color: Colors.white.withValues(alpha: 0.75),
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
                     )),

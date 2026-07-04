@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:movielab/models/hive/hive_helper/fields/actor_preview_fields.dart';
 import 'package:movielab/models/hive/hive_helper/hive_adapters.dart';

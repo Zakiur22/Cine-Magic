@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 class HomeBoxOfficeBox extends StatelessWidget {
   final String title;
   final String image;
-  const HomeBoxOfficeBox({Key? key, required this.title, required this.image})
-      : super(key: key);
+  const HomeBoxOfficeBox({super.key, required this.title, required this.image});
 
   @override
   Widget build(BuildContext context) {

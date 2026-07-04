@@ -14,7 +14,7 @@ class ToastWidget extends StatelessWidget {
   final String listName;
   final double fontSize;
   ToastWidget(
-      {Key? key,
+      {super.key,
       required this.mainText,
       this.mainTextColor = Colors.black,
       this.fontSize = 14,
@@ -23,8 +23,7 @@ class ToastWidget extends StatelessWidget {
       this.buttonOnTap,
       this.closeOnButtonTap = false,
       this.pushOnButtonTap = false,
-      this.listName = ""})
-      : super(key: key);
+      this.listName = ""});
 
   late FToast fToast;
 
@@ -39,7 +38,7 @@ class ToastWidget extends StatelessWidget {
       height: 50,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
-        color: Colors.white.withOpacity(0.95),
+        color: Colors.white.withValues(alpha: 0.95),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -70,7 +69,7 @@ class ToastWidget extends StatelessWidget {
                     }
                   },
               style:
-                  TextButton.styleFrom(foregroundColor: buttonColor.withOpacity(0.5)),
+                  TextButton.styleFrom(foregroundColor: buttonColor.withValues(alpha: 0.5)),
               child: Text(
                 buttonText,
                 style: TextStyle(

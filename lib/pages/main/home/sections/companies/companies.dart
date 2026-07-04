@@ -5,7 +5,7 @@ import 'package:movielab/pages/main/home/sections/home_titles.dart';
 import 'company_page.dart';
 
 class HomePopularCompanies extends StatelessWidget {
-  const HomePopularCompanies({Key? key, required this.title}) : super(key: key);
+  const HomePopularCompanies({super.key, required this.title});
   final String title;
 
   @override

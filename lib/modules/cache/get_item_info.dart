@@ -5,7 +5,7 @@ import 'cacheholder.dart';
 
 Future<dynamic> getItemInfo(
     {required final String id, required final ItemType itemType}) async {
-  dynamic? item;
+  dynamic item;
   final apiRequester = APIRequester();
   final cacheHolder = CacheHolder();
 

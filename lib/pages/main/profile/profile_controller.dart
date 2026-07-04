@@ -5,7 +5,7 @@ class ProfileController extends GetxController {
   late String name;
   late String username;
   late String imageUrl;
-  updateUserInfo({String? name, String? username, String? imageUrl}) {
+  void updateUserInfo({String? name, String? username, String? imageUrl}) {
     this.name = name ?? this.name;
     this.username = username ?? this.username;
     this.imageUrl = imageUrl ?? this.imageUrl;
@@ -14,7 +14,7 @@ class ProfileController extends GetxController {
 
   String? nameErrorText;
   String? usernameErrorText;
-  updateTextFields(
+  void updateTextFields(
       {final String? nameErrorText, final String? usernameErrorText}) {
     this.nameErrorText = nameErrorText ?? this.nameErrorText;
     this.usernameErrorText = usernameErrorText ?? this.usernameErrorText;
@@ -23,18 +23,18 @@ class ProfileController extends GetxController {
 
   int watchedMoviesCount = 0;
   int watchedSeriesCount = 0;
-  updateWatchedMoviesCount(int count) {
+  void updateWatchedMoviesCount(int count) {
     watchedMoviesCount = count;
     update();
   }
 
-  updateWatchedSeriesCount(int count) {
+  void updateWatchedSeriesCount(int count) {
     watchedSeriesCount = count;
     update();
   }
 
   double imdbRatingAverage = 0;
-  updateImdbRatingAverage(double value) {
+  void updateImdbRatingAverage(double value) {
     imdbRatingAverage = value;
     update();
   }

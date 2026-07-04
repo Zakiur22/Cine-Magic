@@ -3,7 +3,7 @@ import 'package:movielab/widgets/section_title.dart';
 
 class ActorPageSummary extends StatelessWidget {
   final String summary;
-  const ActorPageSummary({Key? key, required this.summary}) : super(key: key);
+  const ActorPageSummary({super.key, required this.summary});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class ActorPageSummary extends StatelessWidget {
           child: Text(summary,
               textAlign: TextAlign.justify,
               style: TextStyle(
-                  color: Colors.white.withOpacity(0.55),
+                  color: Colors.white.withValues(alpha: 0.55),
                   fontSize: 15,
                   fontWeight: FontWeight.w400)),
         ),

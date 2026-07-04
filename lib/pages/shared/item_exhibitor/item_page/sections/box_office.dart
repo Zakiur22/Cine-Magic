@@ -5,7 +5,7 @@ import 'more_info.dart';
 
 class ItemPageBoxOffice extends StatelessWidget {
   final FullShow show;
-  const ItemPageBoxOffice({Key? key, required this.show}) : super(key: key);
+  const ItemPageBoxOffice({super.key, required this.show});
 
   @override
   Widget build(BuildContext context) {

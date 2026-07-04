@@ -8,7 +8,7 @@ import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
 import 'get_company.dart';
 
 class CompanyPage extends StatefulWidget {
-  const CompanyPage({Key? key, required this.company}) : super(key: key);
+  const CompanyPage({super.key, required this.company});
   final Map company;
 
   @override
@@ -33,7 +33,7 @@ class _CompanyPageState extends State<CompanyPage> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: Icon(
+              icon: FaIcon(
                 FontAwesomeIcons.arrowLeft,
                 color: widget.company['color'] ?? kPrimaryColor,
                 size: 22.5,

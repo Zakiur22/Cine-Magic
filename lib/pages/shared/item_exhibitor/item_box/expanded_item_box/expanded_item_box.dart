@@ -18,13 +18,12 @@ class ExpandedItemBox extends StatefulWidget {
   final ItemSuit showType;
   final double? width;
   const ExpandedItemBox(
-      {Key? key,
+      {super.key,
       required this.show,
       this.iRank,
       this.preTag = "",
       this.width,
-      required this.showType})
-      : super(key: key);
+      required this.showType});
 
   @override
   State<ExpandedItemBox> createState() => _ExpandedItemBoxState();
@@ -373,7 +372,7 @@ class _ExpandedItemBoxState extends State<ExpandedItemBox>
                                       "${widget.show.imDbVotes} votes",
                                       softWrap: true,
                                       style: TextStyle(
-                                          color: Colors.white.withOpacity(0.8),
+                                          color: Colors.white.withValues(alpha: 0.8),
                                           fontSize: 13.5,
                                           fontWeight: FontWeight.w600),
                                     ))
@@ -423,7 +422,7 @@ class _ExpandedItemBoxState extends State<ExpandedItemBox>
                                     overflow: TextOverflow.ellipsis,
                                     softWrap: true,
                                     style: TextStyle(
-                                        color: Colors.white.withOpacity(0.8),
+                                        color: Colors.white.withValues(alpha: 0.8),
                                         fontSize: 12,
                                         fontWeight: FontWeight.w600),
                                   ),

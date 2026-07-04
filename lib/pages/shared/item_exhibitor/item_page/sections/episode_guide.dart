@@ -8,7 +8,7 @@ import 'episode_guide/episode_guide_page.dart';
 
 class ItemPageEpisodeGuide extends StatelessWidget {
   final FullShow show;
-  const ItemPageEpisodeGuide({Key? key, required this.show}) : super(key: key);
+  const ItemPageEpisodeGuide({super.key, required this.show});
 
   @override
   Widget build(BuildContext context) {

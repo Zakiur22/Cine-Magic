@@ -6,7 +6,7 @@ import 'package:movielab/widgets/section_title.dart';
 
 class ActorPageKnownFor extends StatelessWidget {
   final FullActor? actor;
-  const ActorPageKnownFor({Key? key, required this.actor}) : super(key: key);
+  const ActorPageKnownFor({super.key, required this.actor});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class ActorPageKnownFor extends StatelessWidget {
     }
   }
 
-  knownFor({required List<ShowPreview> knownFor}) {
+  SizedBox knownFor({required List<ShowPreview> knownFor}) {
     return SizedBox(
       height: 280,
       child: Row(

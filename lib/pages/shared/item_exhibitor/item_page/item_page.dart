@@ -22,10 +22,10 @@ class ItemPage extends StatefulWidget {
   final String id;
   final String preTag;
   const ItemPage({
-    Key? key,
+    super.key,
     required this.id,
     this.preTag = "",
-  }) : super(key: key);
+  });
 
   @override
   State<ItemPage> createState() => _ItemPageState();

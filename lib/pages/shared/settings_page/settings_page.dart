@@ -9,7 +9,7 @@ import 'package:movielab/widgets/guide_modal.dart';
 import 'package:movielab/widgets/toast.dart';
 
 class SettingsPage extends StatefulWidget {
-  const SettingsPage({Key? key}) : super(key: key);
+  const SettingsPage({super.key});
 
   @override
   State<SettingsPage> createState() => _SettingsPageState();
@@ -96,7 +96,7 @@ Widget settingSection(
       description,
       style: TextStyle(
           fontSize: 15,
-          color: Colors.white.withOpacity(0.5),
+          color: Colors.white.withValues(alpha: 0.5),
           fontWeight: FontWeight.w700),
     ),
     contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),

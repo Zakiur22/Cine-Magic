@@ -8,9 +8,8 @@ class ConnectionErrorWidget extends StatelessWidget {
   const ConnectionErrorWidget(
       {this.errorText = 'An unexpected error occurred while loading data.',
       required this.tryAgain,
-      Key? key,
-      this.isItTryAgain = true})
-      : super(key: key);
+      super.key,
+      this.isItTryAgain = true});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +29,7 @@ class ConnectionErrorWidget extends StatelessWidget {
                     padding: const EdgeInsets.all(10.0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: kPrimaryColor.withOpacity(0.2),
+                      color: kPrimaryColor.withValues(alpha: 0.2),
                     ),
                     child: Column(
                       children: [

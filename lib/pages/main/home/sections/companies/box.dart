@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class CompanyBox extends StatelessWidget {
   final Map company;
-  const CompanyBox({Key? key, required this.company}) : super(key: key);
+  const CompanyBox({super.key, required this.company});
 
   @override
   Widget build(BuildContext context) {

@@ -8,10 +8,10 @@ AppBar UserListsNavbar() {
     centerTitle: true,
     automaticallyImplyLeading: false,
     title: TabBar(
-      unselectedLabelColor: Colors.grey.withOpacity(0.5),
+      unselectedLabelColor: Colors.grey.withValues(alpha: 0.5),
       splashFactory: NoSplash.splashFactory,
       overlayColor:
-          MaterialStateColor.resolveWith((states) => Colors.transparent),
+          WidgetStateColor.resolveWith((states) => Colors.transparent),
       physics: const BouncingScrollPhysics(),
       indicatorColor: Colors.transparent,
       tabs: const [

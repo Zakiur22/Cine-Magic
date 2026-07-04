@@ -4,7 +4,7 @@ import 'package:movielab/widgets/section_title.dart';
 
 class ActorPageMoreInfo extends StatelessWidget {
   final FullActor? actor;
-  const ActorPageMoreInfo({Key? key, required this.actor}) : super(key: key);
+  const ActorPageMoreInfo({super.key, required this.actor});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class ActorPageMoreInfo extends StatelessWidget {
   }
 }
 
-info({required final String infoName, required final String infoValue}) {
+Padding info({required final String infoName, required final String infoValue}) {
   return Padding(
     padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
     child: Row(
@@ -39,7 +39,7 @@ info({required final String infoName, required final String infoValue}) {
         Text("$infoName:",
             softWrap: true,
             style: TextStyle(
-                color: Colors.white.withOpacity(0.8),
+                color: Colors.white.withValues(alpha: 0.8),
                 fontSize: 12.5,
                 fontWeight: FontWeight.w600)),
         Flexible(
@@ -48,7 +48,7 @@ info({required final String infoName, required final String infoValue}) {
             child: Text(infoValue,
                 softWrap: true,
                 style: TextStyle(
-                    color: Colors.white.withOpacity(0.6),
+                    color: Colors.white.withValues(alpha: 0.6),
                     fontSize: 12.5,
                     fontWeight: FontWeight.w500)),
           ),

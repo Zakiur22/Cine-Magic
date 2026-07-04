@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:movielab/constants/colors.dart';
 
 import 'season_episodes_list.dart';
 
@@ -8,10 +7,10 @@ class EpisodeGuideSeasonPage extends StatelessWidget {
   final int index;
   final dynamic show;
   const EpisodeGuideSeasonPage({
-    Key? key,
+    super.key,
     required this.index,
     required this.show,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

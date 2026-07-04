@@ -10,11 +10,11 @@ class StatsChart extends StatefulWidget {
   final List<String> items;
 
   const StatsChart({
-    Key? key,
+    super.key,
     required this.index,
     required this.statsName,
     required this.items,
-  }) : super(key: key);
+  });
 
   @override
   State<StatsChart> createState() => StatsChartState();
@@ -123,7 +123,7 @@ class StatsChartState extends State<StatsChart> {
     });
   }
 
-  getStats() {
+  void getStats() {
     if (widget.items.isNotEmpty) {
       for (String items in widget.items) {
         for (String item in items.split(", ")) {

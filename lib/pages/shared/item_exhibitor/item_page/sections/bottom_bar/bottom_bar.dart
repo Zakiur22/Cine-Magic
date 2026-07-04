@@ -13,11 +13,10 @@ class ItemPageBottonBar extends StatefulWidget {
   final Map<String, bool> isThereInLists;
   final Future<dynamic> Function() updateShowData;
   const ItemPageBottonBar(
-      {Key? key,
+      {super.key,
       required this.show,
       required this.isThereInLists,
-      required this.updateShowData})
-      : super(key: key);
+      required this.updateShowData});
 
   @override
   State<ItemPageBottonBar> createState() => _ItemPageBottonBarState();
@@ -50,7 +49,7 @@ class _ItemPageBottonBarState extends State<ItemPageBottonBar>
             child: const SizedBox(
               height: 45,
               width: 45,
-              child: Icon(
+              child: FaIcon(
                 FontAwesomeIcons.alignLeft,
                 size: 22.5,
               ),
@@ -85,7 +84,7 @@ class _ItemPageBottonBarState extends State<ItemPageBottonBar>
             child: const SizedBox(
               height: 45,
               width: 45,
-              child: Icon(
+              child: FaIcon(
                 FontAwesomeIcons.arrowUpRightFromSquare,
                 size: 22.5,
               ),
@@ -102,7 +101,7 @@ class _ItemPageBottonBarState extends State<ItemPageBottonBar>
             child: const SizedBox(
               height: 45,
               width: 45,
-              child: Icon(
+              child: FaIcon(
                 FontAwesomeIcons.share,
                 size: 22.5,
               ),

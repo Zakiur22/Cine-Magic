@@ -10,8 +10,7 @@ class AllTrendingsPage extends StatelessWidget {
   final List<ShowPreview> trendings;
   final String title;
   const AllTrendingsPage(
-      {Key? key, required this.trendings, required this.title})
-      : super(key: key);
+      {super.key, required this.trendings, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,7 @@ class AllTrendingsPage extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: const Icon(
+              icon: const FaIcon(
                 FontAwesomeIcons.arrowLeft,
                 size: 22.5,
               )),

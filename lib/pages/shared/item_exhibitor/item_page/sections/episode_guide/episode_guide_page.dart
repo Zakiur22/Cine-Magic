@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:movielab/constants/colors.dart';
 import 'package:movielab/modules/api/api_requester.dart';
 
@@ -10,8 +9,7 @@ class EpisodeGuidePage extends StatefulWidget {
   final int initialIndex;
   final dynamic show;
   const EpisodeGuidePage(
-      {Key? key, required this.show, required this.initialIndex})
-      : super(key: key);
+      {super.key, required this.show, required this.initialIndex});
 
   @override
   State<EpisodeGuidePage> createState() => _EpisodeGuidePageState();
@@ -71,7 +69,7 @@ class _EpisodeGuidePageState extends State<EpisodeGuidePage>
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: const Icon(
+              icon: const FaIcon(
                 FontAwesomeIcons.arrowLeft,
                 color: Colors.white,
                 size: 20,
@@ -87,7 +85,7 @@ class _EpisodeGuidePageState extends State<EpisodeGuidePage>
           bottom: TabBar(
               controller: _controller,
               physics: const BouncingScrollPhysics(),
-              unselectedLabelColor: Colors.white.withOpacity(0.7),
+              unselectedLabelColor: Colors.white.withValues(alpha: 0.7),
               labelColor: kLightBlueColor,
               indicatorWeight: 5,
               indicatorPadding: const EdgeInsets.symmetric(horizontal: 5),

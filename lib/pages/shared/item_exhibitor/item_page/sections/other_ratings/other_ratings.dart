@@ -5,7 +5,7 @@ import 'package:movielab/widgets/section_title.dart';
 import 'other_ratings_box.dart';
 
 class ItemPageOtherRatings extends StatelessWidget {
-  const ItemPageOtherRatings({Key? key, required this.show}) : super(key: key);
+  const ItemPageOtherRatings({super.key, required this.show});
   final FullShow show;
 
   @override

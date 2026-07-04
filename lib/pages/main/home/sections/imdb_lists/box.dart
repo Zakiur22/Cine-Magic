@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:movielab/constants/colors.dart';
 
 class HomeIMDbBox extends StatelessWidget {
   final String title;
-  const HomeIMDbBox({Key? key, required this.title}) : super(key: key);
+  const HomeIMDbBox({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {

@@ -6,7 +6,7 @@ import 'package:movielab/models/item_models/show_models/full_show_model.dart';
 
 class ItemPagePosters extends StatelessWidget {
   final List<PosterData> posters;
-  const ItemPagePosters({Key? key, required this.posters}) : super(key: key);
+  const ItemPagePosters({super.key, required this.posters});
 
   @override
   Widget build(BuildContext context) {

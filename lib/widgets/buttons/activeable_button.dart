@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ActiveableButton extends StatelessWidget {
   final String text;
   final String? activeText;
-  final IconData? icon;
-  final IconData? activeIcon;
+  final dynamic icon;
+  final dynamic activeIcon;
   final VoidCallback onTap;
   final bool isActive;
   final Color backgroundColor;
   final Color? activeColor;
   final EdgeInsets margin;
   ActiveableButton(
-      {Key? key,
+      {super.key,
       required this.isActive,
       required this.text,
       this.activeText,
@@ -21,8 +22,7 @@ class ActiveableButton extends StatelessWidget {
       required this.onTap,
       this.activeColor,
       this.margin = const EdgeInsets.symmetric(vertical: 7.5),
-      this.backgroundColor = const Color(0xff2a425f)})
-      : super(key: key);
+      this.backgroundColor = const Color(0xff2a425f)});
   bool tapped = false;
   @override
   Widget build(BuildContext context) {
@@ -33,9 +33,9 @@ class ActiveableButton extends StatelessWidget {
         width: MediaQuery.of(context).size.width - 100,
         decoration: BoxDecoration(
             color: isActive
-                ? activeColor?.withOpacity(0.75) ??
-                    backgroundColor.withOpacity(0.75)
-                : backgroundColor.withOpacity(0.75),
+                ? activeColor?.withValues(alpha: 0.75) ??
+                    backgroundColor.withValues(alpha: 0.75)
+                : backgroundColor.withValues(alpha: 0.75),
             borderRadius: BorderRadius.circular(15)),
         duration: const Duration(milliseconds: 150),
         child: !tapped
@@ -59,10 +59,15 @@ class ActiveableButton extends StatelessWidget {
                     icon != null
                         ? Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 25),
-                            child: Icon(
-                              isActive ? activeIcon ?? icon : icon,
-                              size: 20,
-                            ),
+                            child: (isActive ? activeIcon ?? icon : icon) is IconData
+                                ? Icon(
+                                    isActive ? activeIcon ?? icon : icon,
+                                    size: 20,
+                                  )
+                                : FaIcon(
+                                    isActive ? activeIcon ?? icon : icon,
+                                    size: 20,
+                                  ),
                           )
                         : const SizedBox.shrink(),
                     Text(

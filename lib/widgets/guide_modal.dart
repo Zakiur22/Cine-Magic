@@ -31,7 +31,7 @@ Future<dynamic> guideModalSheet(BuildContext context,
               width: MediaQuery.of(context).size.width / 3,
               margin: const EdgeInsets.only(top: 8.5, bottom: 32.5),
               height: 3,
-              color: Colors.white.withOpacity(0.4),
+              color: Colors.white.withValues(alpha: 0.4),
             ),
             Text(
               title,

@@ -10,13 +10,12 @@ class UserStatsBox extends StatefulWidget {
   final List<String> items;
 
   const UserStatsBox(
-      {Key? key,
+      {super.key,
       this.width,
       required this.title,
       this.sizeType = 1,
       this.value,
-      required this.items})
-      : super(key: key);
+      required this.items});
 
   @override
   State<UserStatsBox> createState() => _UserStatsBoxState();
@@ -71,7 +70,7 @@ class _UserStatsBoxState extends State<UserStatsBox> {
                 widget.title,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: Colors.white.withOpacity(0.75),
+                    color: Colors.white.withValues(alpha: 0.75),
                     fontWeight: FontWeight.w600),
               ),
             ],
@@ -81,7 +80,7 @@ class _UserStatsBoxState extends State<UserStatsBox> {
     );
   }
 
-  getStats() {
+  void getStats() {
     if (widget.items.isNotEmpty) {
       for (String items in widget.items) {
         for (String item in items.split(", ")) {

@@ -23,7 +23,7 @@ import 'sections/navbar/navbar.dart';
 import 'sections/trendings/home_trendings.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -161,7 +161,7 @@ Future checkForUpdateDialog(BuildContext context, dynamic vsync) async {
                       width: MediaQuery.of(context).size.width / 3,
                       margin: const EdgeInsets.only(top: 8.5, bottom: 7.5),
                       height: 3,
-                      color: Colors.white.withOpacity(0.4),
+                      color: Colors.white.withValues(alpha: 0.4),
                     ),
                     UnDraw(
                       color: kAccentColor,
@@ -192,7 +192,7 @@ Future checkForUpdateDialog(BuildContext context, dynamic vsync) async {
                       style: TextStyle(
                           fontWeight: FontWeight.w600,
                           fontSize: 15,
-                          color: Colors.white.withOpacity(0.66)),
+                          color: Colors.white.withValues(alpha: 0.66)),
                     ),
                     const SizedBox(
                       height: 20,

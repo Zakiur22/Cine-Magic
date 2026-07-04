@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ItemPageTitle extends StatelessWidget {
   final String title;
-  const ItemPageTitle({Key? key, required this.title}) : super(key: key);
+  const ItemPageTitle({super.key, required this.title});
   @override
   Widget build(BuildContext context) {
     return Center(

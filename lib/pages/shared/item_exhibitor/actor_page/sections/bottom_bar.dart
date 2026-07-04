@@ -7,9 +7,9 @@ import 'package:share_plus/share_plus.dart';
 class ActorPageBottomBar extends StatelessWidget {
   final FullActor actor;
   ActorPageBottomBar({
-    Key? key,
+    super.key,
     required this.actor,
-  }) : super(key: key);
+  });
   late FToast fToast;
 
   @override
@@ -28,7 +28,7 @@ class ActorPageBottomBar extends StatelessWidget {
             child: const SizedBox(
               height: 45,
               width: 45,
-              child: Icon(
+              child: FaIcon(
                 FontAwesomeIcons.share,
                 size: 22.5,
               ),

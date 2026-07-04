@@ -4,9 +4,9 @@ import 'package:movielab/models/item_models/show_models/full_show_model.dart';
 class ItemPageNavBar extends StatelessWidget {
   final FullShow show;
   const ItemPageNavBar({
-    Key? key,
+    super.key,
     required this.show,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class ItemPageNavBar extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.4),
+                color: Colors.black.withValues(alpha: 0.4),
                 borderRadius: BorderRadius.circular(25),
               ),
               child: IconButton(
