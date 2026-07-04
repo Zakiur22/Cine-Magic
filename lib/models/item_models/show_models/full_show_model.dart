@@ -146,7 +146,7 @@ class FullShow {
 }
 
 // Get similar movies or TV shows to a movie or TV show from the API
-List<ShowPreview>? getSimilars({required json}) {
+List<ShowPreview>? getSimilars({required dynamic json}) {
   List<ShowPreview> similars = [];
   for (int i = 0; i < json.length; i++) {
     json[i]["rank"] = i.toString();

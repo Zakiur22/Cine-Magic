@@ -45,7 +45,7 @@ class FullActor {
 }
 
 // Get known for movies or TV shows to an actor or actress from the API
-List<ShowPreview>? getKnownFor({required json}) {
+List<ShowPreview>? getKnownFor({required dynamic json}) {
   List<ShowPreview> knownFor = [];
   for (int i = 0; i < json.length; i++) {
     json[i]["rank"] = i.toString();
