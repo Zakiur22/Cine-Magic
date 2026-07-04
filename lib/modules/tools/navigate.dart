@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
 class Navigate {
-  static void pushTo(context, Widget page) {
+  static void pushTo(BuildContext context, Widget page) {
     Navigator.push(
         context,
         PageTransition(
@@ -11,7 +11,7 @@ class Navigate {
             child: page));
   }
 
-  static void replaceTo(context, Widget page) {
+  static void replaceTo(BuildContext context, Widget page) {
     Navigator.pushReplacement(
         context,
         PageTransition(
@@ -20,7 +20,7 @@ class Navigate {
             child: page));
   }
 
-  static void pushHeroicTo(context, Widget page) {
+  static void pushHeroicTo(BuildContext context, Widget page) {
     Navigator.push(
         context,
         MaterialPageRoute(
