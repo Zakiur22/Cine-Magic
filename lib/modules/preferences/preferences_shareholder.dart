@@ -1,17 +1,17 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:movielab/models/hive/convertor.dart';
-import 'package:movielab/models/hive/models/actor_preview.dart';
-import 'package:movielab/models/hive/models/show_preview.dart';
-import 'package:movielab/models/hive/models/user.dart';
-import 'package:movielab/models/item_models/actor_models/actor_preview_model.dart';
-import 'package:movielab/models/item_models/actor_models/full_actor_model.dart';
-import 'package:movielab/models/item_models/show_models/full_show_model.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/models/user_model/user_model.dart';
-import 'package:movielab/modules/recommender/recommender.dart';
-import 'package:movielab/pages/splash/get_user_data.dart';
+import 'package:cinemagic/models/hive/convertor.dart';
+import 'package:cinemagic/models/hive/models/actor_preview.dart';
+import 'package:cinemagic/models/hive/models/show_preview.dart';
+import 'package:cinemagic/models/hive/models/user.dart';
+import 'package:cinemagic/models/item_models/actor_models/actor_preview_model.dart';
+import 'package:cinemagic/models/item_models/actor_models/full_actor_model.dart';
+import 'package:cinemagic/models/item_models/show_models/full_show_model.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/models/user_model/user_model.dart';
+import 'package:cinemagic/modules/recommender/recommender.dart';
+import 'package:cinemagic/pages/splash/get_user_data.dart';
 
 class PreferencesShareholder {
   // Delete all items of a list in the shared preferences

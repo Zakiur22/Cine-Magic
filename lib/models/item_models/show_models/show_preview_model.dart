@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:movielab/modules/tools/image_quality_increaser.dart';
+import 'package:cinemagic/modules/tools/image_quality_increaser.dart';
 
 // Movie or TV show preview model class
 class ShowPreview {

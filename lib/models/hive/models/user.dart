@@ -1,7 +1,7 @@
 import 'package:hive/hive.dart';
-import 'package:movielab/models/hive/hive_helper/fields/user_fields.dart';
-import 'package:movielab/models/hive/hive_helper/hive_adapters.dart';
-import 'package:movielab/models/hive/hive_helper/hive_types.dart';
+import 'package:cinemagic/models/hive/hive_helper/fields/user_fields.dart';
+import 'package:cinemagic/models/hive/hive_helper/hive_adapters.dart';
+import 'package:cinemagic/models/hive/hive_helper/hive_types.dart';
 
 part 'user.g.dart';
 

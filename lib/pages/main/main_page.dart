@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/pages/main/main_controller.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/pages/main/main_controller.dart';
 import 'package:flashy_tab_bar2/flashy_tab_bar2.dart';
 
 // Main pages:

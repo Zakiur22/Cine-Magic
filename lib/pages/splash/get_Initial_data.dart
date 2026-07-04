@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/modules/api/api_requester.dart';
-import 'package:movielab/pages/main/home/home_data_controller.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/modules/api/api_requester.dart';
+import 'package:cinemagic/pages/main/home/home_data_controller.dart';
 
 Future<RequestResult> getInitialData() async {
   final apiRequester = APIRequester();

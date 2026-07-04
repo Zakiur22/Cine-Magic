@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/modules/preferences/backup.dart';
-import 'package:movielab/widgets/default_appbar.dart';
-import 'package:movielab/widgets/guide_modal.dart';
-import 'package:movielab/widgets/toast.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/modules/preferences/backup.dart';
+import 'package:cinemagic/widgets/default_appbar.dart';
+import 'package:cinemagic/widgets/guide_modal.dart';
+import 'package:cinemagic/widgets/toast.dart';
 
 import '../settings_page.dart';
 

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/shared/settings_page/sections/backup_page.dart';
-import 'package:movielab/widgets/default_appbar.dart';
-import 'package:movielab/widgets/guide_modal.dart';
-import 'package:movielab/widgets/toast.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/shared/settings_page/sections/backup_page.dart';
+import 'package:cinemagic/widgets/default_appbar.dart';
+import 'package:cinemagic/widgets/guide_modal.dart';
+import 'package:cinemagic/widgets/toast.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});

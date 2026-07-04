@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/main/home/sections/box_office/pages/all_time.dart';
-import 'package:movielab/pages/main/home/sections/box_office/pages/box_office.dart';
-import 'package:movielab/modules/api/api_requester.dart';
-import 'package:movielab/pages/main/home/sections/home_titles.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/main/home/sections/box_office/pages/all_time.dart';
+import 'package:cinemagic/pages/main/home/sections/box_office/pages/box_office.dart';
+import 'package:cinemagic/modules/api/api_requester.dart';
+import 'package:cinemagic/pages/main/home/sections/home_titles.dart';
 import 'box.dart';
 
 class HomeBoxOffice extends StatelessWidget {

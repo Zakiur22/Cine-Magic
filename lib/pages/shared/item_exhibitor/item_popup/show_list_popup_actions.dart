@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/models/item_models/show_models/full_show_model.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/modules/tools/capitalizer.dart';
-import 'package:movielab/modules/cache/get_item_info.dart';
-import 'package:movielab/widgets/buttons/activeable_button.dart';
-import 'package:movielab/widgets/toast.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/models/item_models/show_models/full_show_model.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/modules/preferences/preferences_shareholder.dart';
+import 'package:cinemagic/modules/tools/capitalizer.dart';
+import 'package:cinemagic/modules/cache/get_item_info.dart';
+import 'package:cinemagic/widgets/buttons/activeable_button.dart';
+import 'package:cinemagic/widgets/toast.dart';
 import 'watchtime/watchtime.dart';
 
 class ItemPopupActions extends StatefulWidget {

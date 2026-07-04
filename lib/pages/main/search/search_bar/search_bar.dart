@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/pages/main/search/search.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/pages/main/search/search.dart';
 import '../../../../constants/colors.dart';
 import 'voice_search.dart';
 import 'search_bar_controller.dart';

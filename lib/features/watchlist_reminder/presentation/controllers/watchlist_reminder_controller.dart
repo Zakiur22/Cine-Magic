@@ -2,10 +2,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:movielab/models/hive/models/show_preview.dart';
-import 'package:movielab/features/watchlist_reminder/data/repositories/watchlist_reminder_repository_impl.dart';
-import 'package:movielab/features/watchlist_reminder/domain/repositories/watchlist_reminder_repository.dart';
-import 'package:movielab/constants/colors.dart';
+import 'package:cinemagic/models/hive/models/show_preview.dart';
+import 'package:cinemagic/features/watchlist_reminder/data/repositories/watchlist_reminder_repository_impl.dart';
+import 'package:cinemagic/features/watchlist_reminder/domain/repositories/watchlist_reminder_repository.dart';
+import 'package:cinemagic/constants/colors.dart';
 
 class WatchlistReminderController extends GetxController {
   final WatchlistReminderRepository _repository = WatchlistReminderRepositoryImpl();

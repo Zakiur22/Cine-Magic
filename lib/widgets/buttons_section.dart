@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/widgets/section_title.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/widgets/section_title.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ButtonsSection extends StatelessWidget {

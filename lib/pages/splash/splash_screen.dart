@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:movielab/constants/app.dart';
-import 'package:movielab/modules/recommender/recommender.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/main/main_page.dart';
-import 'package:movielab/widgets/error.dart';
+import 'package:cinemagic/constants/app.dart';
+import 'package:cinemagic/modules/recommender/recommender.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/main/main_page.dart';
+import 'package:cinemagic/widgets/error.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../constants/colors.dart';
 import '../../constants/types.dart';

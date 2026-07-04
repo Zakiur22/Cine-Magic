@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/pages/shared/userlist_body.dart';
+import 'package:cinemagic/pages/shared/userlist_body.dart';
 import 'sections/navbar.dart';
 
 class UserListsPage extends StatelessWidget {

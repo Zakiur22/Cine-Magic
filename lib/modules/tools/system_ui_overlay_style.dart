@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:movielab/constants/colors.dart';
+import 'package:cinemagic/constants/colors.dart';
 
 void setSystemUIOverlayStyle({Color color = kBackgroundColor}) {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(

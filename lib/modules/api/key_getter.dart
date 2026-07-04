@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
-import 'package:movielab/.api.dart';
-import 'package:movielab/constants/app.dart';
-import 'package:movielab/constants/types.dart';
+import 'package:cinemagic/.api.dart';
+import 'package:cinemagic/constants/app.dart';
+import 'package:cinemagic/constants/types.dart';
 
 Future<RequestResult> keyGetter() async {
   const String url = "";

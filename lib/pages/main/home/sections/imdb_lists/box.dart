@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/constants/colors.dart';
+import 'package:cinemagic/constants/colors.dart';
 
 class HomeIMDbBox extends StatelessWidget {
   final String title;

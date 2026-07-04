@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/main/profile/sections/user_stats/user_stats.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/main/profile/sections/user_stats/user_stats.dart';
 
 class UserStatsBox extends StatefulWidget {
   final String title;

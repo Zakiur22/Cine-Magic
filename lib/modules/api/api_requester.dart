@@ -3,17 +3,17 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
-import 'package:movielab/.api.dart';
-import 'package:movielab/constants/app.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/models/item_models/actor_models/full_actor_model.dart';
-import 'package:movielab/models/item_models/show_models/external_sites_model.dart';
-import 'package:movielab/models/item_models/show_models/full_show_model.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/modules/api/key_getter.dart';
-import 'package:movielab/modules/cache/cacheholder.dart';
-import 'package:movielab/pages/main/home/home_data_controller.dart';
-import 'package:movielab/pages/main/search/search_bar/search_bar_controller.dart';
+import 'package:cinemagic/.api.dart';
+import 'package:cinemagic/constants/app.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/models/item_models/actor_models/full_actor_model.dart';
+import 'package:cinemagic/models/item_models/show_models/external_sites_model.dart';
+import 'package:cinemagic/models/item_models/show_models/full_show_model.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/modules/api/key_getter.dart';
+import 'package:cinemagic/modules/cache/cacheholder.dart';
+import 'package:cinemagic/pages/main/home/home_data_controller.dart';
+import 'package:cinemagic/pages/main/search/search_bar/search_bar_controller.dart';
 
 class APIRequester {
   static const String imdbBaseUrl = 'https://imdb-api.com/en/API';

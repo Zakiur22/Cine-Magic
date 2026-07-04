@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/models/hive/models/show_preview.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/pages/main/profile/sections/list_page/sections/stats_page/sections/navbar.dart';
-import 'package:movielab/pages/main/profile/sections/list_page/sections/stats_page/sections/stats_chart.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/models/hive/models/show_preview.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/modules/preferences/preferences_shareholder.dart';
+import 'package:cinemagic/pages/main/profile/sections/list_page/sections/stats_page/sections/navbar.dart';
+import 'package:cinemagic/pages/main/profile/sections/list_page/sections/stats_page/sections/stats_chart.dart';
 
 class ListStatsPage extends StatefulWidget {
   final String listName;

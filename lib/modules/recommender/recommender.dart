@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
-import 'package:movielab/models/item_models/actor_models/actor_preview_model.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/pages/main/home/home_data_controller.dart';
+import 'package:cinemagic/models/item_models/actor_models/actor_preview_model.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/modules/preferences/preferences_shareholder.dart';
+import 'package:cinemagic/pages/main/home/home_data_controller.dart';
 
 Future recommender() async {
   PreferencesShareholder preferencesShareholder = PreferencesShareholder();

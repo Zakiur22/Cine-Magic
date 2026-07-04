@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/models/hive/models/actor_preview.dart';
-import 'package:movielab/models/hive/models/show_preview.dart';
-import 'package:movielab/models/item_models/actor_models/actor_preview_model.dart';
-import 'package:movielab/models/item_models/actor_models/full_actor_model.dart';
-import 'package:movielab/models/item_models/show_models/full_show_model.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/models/user_model/user_model.dart';
+import 'package:cinemagic/models/hive/models/actor_preview.dart';
+import 'package:cinemagic/models/hive/models/show_preview.dart';
+import 'package:cinemagic/models/item_models/actor_models/actor_preview_model.dart';
+import 'package:cinemagic/models/item_models/actor_models/full_actor_model.dart';
+import 'package:cinemagic/models/item_models/show_models/full_show_model.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/models/user_model/user_model.dart';
 import 'models/user.dart';
 
 ShowPreview convertHiveToShowPreview(HiveShowPreview hive) {

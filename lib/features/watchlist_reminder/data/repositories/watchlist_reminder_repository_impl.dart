@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:movielab/models/hive/models/show_preview.dart';
-import 'package:movielab/features/watchlist_reminder/domain/repositories/watchlist_reminder_repository.dart';
+import 'package:cinemagic/models/hive/models/show_preview.dart';
+import 'package:cinemagic/features/watchlist_reminder/domain/repositories/watchlist_reminder_repository.dart';
 
 class WatchlistReminderRepositoryImpl implements WatchlistReminderRepository {
   final Box<HiveShowPreview> _watchlistBox = Hive.box<HiveShowPreview>('watchlist');

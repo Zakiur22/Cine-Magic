@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/main/profile/profile_controller.dart';
-import 'package:movielab/pages/main/profile/sections/user_profile/sections/stats_box.dart';
-import 'package:movielab/pages/main/profile/sections/user_stats/user_stats.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/modules/preferences/preferences_shareholder.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/main/profile/profile_controller.dart';
+import 'package:cinemagic/pages/main/profile/sections/user_profile/sections/stats_box.dart';
+import 'package:cinemagic/pages/main/profile/sections/user_stats/user_stats.dart';
 
 import 'edit_user_profile.dart';
 import 'sections/dividers.dart';

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/main/home/sections/genres/genre_page.dart';
-import 'package:movielab/pages/main/home/sections/home_titles.dart';
-import 'package:movielab/widgets/buttons/glassmorphism_button.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/main/home/sections/genres/genre_page.dart';
+import 'package:cinemagic/pages/main/home/sections/home_titles.dart';
+import 'package:cinemagic/widgets/buttons/glassmorphism_button.dart';
 
 class HomePopularGenres extends StatelessWidget {
   const HomePopularGenres({super.key, required this.title});

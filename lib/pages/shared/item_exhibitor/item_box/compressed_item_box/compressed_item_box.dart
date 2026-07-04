@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/constants/user_lists.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/pages/shared/item_exhibitor/item_popup/show_list_popup_actions.dart';
-import 'package:movielab/widgets/buttons_section.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/constants/user_lists.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/modules/preferences/preferences_shareholder.dart';
+import 'package:cinemagic/pages/shared/item_exhibitor/item_popup/show_list_popup_actions.dart';
+import 'package:cinemagic/widgets/buttons_section.dart';
 import '../item_box_common.dart';
 
 class CompressedItemBox extends StatefulWidget {

@@ -1,7 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/widgets/inefficacious_refresh_indicator.dart';
 import 'indicator.dart';
 
 class StatsChart extends StatefulWidget {

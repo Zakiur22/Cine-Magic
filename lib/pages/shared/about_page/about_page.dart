@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:movielab/constants/app.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/pages/shared/app_name.dart';
-import 'package:movielab/widgets/buttons/social_media_button.dart';
-import 'package:movielab/widgets/default_appbar.dart';
+import 'package:cinemagic/constants/app.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/pages/shared/app_name.dart';
+import 'package:cinemagic/widgets/buttons/social_media_button.dart';
+import 'package:cinemagic/widgets/default_appbar.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});

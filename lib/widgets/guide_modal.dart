@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/widgets/buttons/activeable_button.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/widgets/buttons/activeable_button.dart';
 
 Future<dynamic> guideModalSheet(BuildContext context,
     {required dynamic vsync,

@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/models/item_models/actor_models/actor_preview_model.dart';
-import 'package:movielab/models/item_models/actor_models/full_actor_model.dart';
-import 'package:movielab/models/item_models/show_models/full_show_model.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/modules/cache/get_item_info.dart';
-import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/modules/tools/capitalizer.dart';
-import 'package:movielab/pages/shared/item_exhibitor/item_box/actor_box/expanded_actor_box.dart';
-import 'package:movielab/widgets/toast.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/models/item_models/actor_models/actor_preview_model.dart';
+import 'package:cinemagic/models/item_models/actor_models/full_actor_model.dart';
+import 'package:cinemagic/models/item_models/show_models/full_show_model.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/modules/cache/get_item_info.dart';
+import 'package:cinemagic/modules/preferences/preferences_shareholder.dart';
+import 'package:cinemagic/modules/tools/capitalizer.dart';
+import 'package:cinemagic/pages/shared/item_exhibitor/item_box/actor_box/expanded_actor_box.dart';
+import 'package:cinemagic/widgets/toast.dart';
 import 'expanded_item_box/expanded_item_box.dart';
 
 // ignore: must_be_immutable

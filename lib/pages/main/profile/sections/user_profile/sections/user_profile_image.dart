@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/pages/main/profile/profile_controller.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/pages/main/profile/profile_controller.dart';
 
 Widget userProfileImage(BuildContext context,
         {required IconData icon, void Function()? onTap}) =>

@@ -6,8 +6,8 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:gal/gal.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/widgets/toast.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/widgets/toast.dart';
 import 'package:share_plus/share_plus.dart';
 
 class FullImagePage extends StatefulWidget {

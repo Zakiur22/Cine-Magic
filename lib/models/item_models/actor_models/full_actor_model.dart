@@ -1,5 +1,5 @@
 // Actor or Actress all details model class
-import 'package:movielab/modules/tools/image_quality_increaser.dart';
+import 'package:cinemagic/modules/tools/image_quality_increaser.dart';
 
 import '../show_models/show_preview_model.dart';
 

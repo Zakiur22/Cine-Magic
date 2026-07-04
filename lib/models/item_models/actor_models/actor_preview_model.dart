@@ -1,8 +1,8 @@
 // Actor or actress preview model class
 import 'dart:convert';
 
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/modules/tools/image_quality_increaser.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/modules/tools/image_quality_increaser.dart';
 
 class ActorPreview {
   final String id;

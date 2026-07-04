@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/main/home/sections/companies/box.dart';
-import 'package:movielab/pages/main/home/sections/home_titles.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/main/home/sections/companies/box.dart';
+import 'package:cinemagic/pages/main/home/sections/home_titles.dart';
 import 'company_page.dart';
 
 class HomePopularCompanies extends StatelessWidget {

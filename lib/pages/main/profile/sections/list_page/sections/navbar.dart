@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:movielab/modules/tools/capitalizer.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/main/profile/sections/list_page/sections/stats_page/stats.dart';
-import 'package:movielab/pages/shared/about_recommendations_page/about_recommendations.dart';
+import 'package:cinemagic/modules/tools/capitalizer.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/main/profile/sections/list_page/sections/stats_page/stats.dart';
+import 'package:cinemagic/pages/shared/about_recommendations_page/about_recommendations.dart';
 
 AppBar listPageNavbar(context, {required final String listName}) {
   return AppBar(

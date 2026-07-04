@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/constants/colors.dart';
+import 'package:cinemagic/constants/colors.dart';
 
 class AppName extends StatelessWidget {
   const AppName({super.key});

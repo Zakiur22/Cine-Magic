@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/shared/item_exhibitor/item_page/item_page.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/shared/item_exhibitor/item_page/item_page.dart';
 
 void openItemPage(BuildContext context,
     {required final String id, final String preTag = ""}) {

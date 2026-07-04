@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/pages/main/profile/sections/list_page/sections/navbar.dart';
-import 'package:movielab/pages/shared/userlist_body.dart';
-import 'package:movielab/widgets/toast.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/modules/preferences/preferences_shareholder.dart';
+import 'package:cinemagic/pages/main/profile/sections/list_page/sections/navbar.dart';
+import 'package:cinemagic/pages/shared/userlist_body.dart';
+import 'package:cinemagic/widgets/toast.dart';
 
 // ignore: must_be_immutable
 class ListPage extends StatelessWidget {

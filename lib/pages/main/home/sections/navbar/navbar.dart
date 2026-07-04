@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/main/main_controller.dart';
-import 'package:movielab/pages/shared/about_page/about_page.dart';
-import 'package:movielab/pages/shared/app_name.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/main/main_controller.dart';
+import 'package:cinemagic/pages/shared/about_page/about_page.dart';
+import 'package:cinemagic/pages/shared/app_name.dart';
 
 class HomeNavbar extends StatelessWidget {
   const HomeNavbar({super.key});

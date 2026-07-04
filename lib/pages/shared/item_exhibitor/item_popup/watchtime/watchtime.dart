@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/constants/general.dart';
-import 'package:movielab/models/hive/convertor.dart';
-import 'package:movielab/models/item_models/show_models/full_show_model.dart';
-import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/widgets/buttons/glassmorphism_button.dart';
-import 'package:movielab/widgets/toast.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/constants/general.dart';
+import 'package:cinemagic/models/hive/convertor.dart';
+import 'package:cinemagic/models/item_models/show_models/full_show_model.dart';
+import 'package:cinemagic/modules/preferences/preferences_shareholder.dart';
+import 'package:cinemagic/widgets/buttons/glassmorphism_button.dart';
+import 'package:cinemagic/widgets/toast.dart';
 
 class AddWatchTime extends StatefulWidget {
   final FullShow? fullShow;

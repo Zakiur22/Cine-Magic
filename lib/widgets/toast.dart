@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/main/profile/sections/list_page/list_page.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/main/profile/sections/list_page/list_page.dart';
 
 class ToastWidget extends StatelessWidget {
   final String mainText;

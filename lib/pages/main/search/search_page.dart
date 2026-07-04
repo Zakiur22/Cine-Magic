@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart' hide SearchBar;
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/models/hive/convertor.dart';
-import 'package:movielab/pages/main/main_controller.dart';
-import 'package:movielab/pages/main/search/search.dart';
-import 'package:movielab/pages/main/search/search_bar/search_bar.dart';
-import 'package:movielab/pages/main/search/search_bar/search_bar_controller.dart';
-import 'package:movielab/pages/shared/item_exhibitor/item_box/actor_box/expanded_actor_box.dart';
-import 'package:movielab/pages/shared/item_exhibitor/item_box/expanded_item_box/expanded_item_box.dart';
-import 'package:movielab/widgets/error.dart';
-import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/models/hive/convertor.dart';
+import 'package:cinemagic/pages/main/main_controller.dart';
+import 'package:cinemagic/pages/main/search/search.dart';
+import 'package:cinemagic/pages/main/search/search_bar/search_bar.dart';
+import 'package:cinemagic/pages/main/search/search_bar/search_bar_controller.dart';
+import 'package:cinemagic/pages/shared/item_exhibitor/item_box/actor_box/expanded_actor_box.dart';
+import 'package:cinemagic/pages/shared/item_exhibitor/item_box/expanded_item_box/expanded_item_box.dart';
+import 'package:cinemagic/widgets/error.dart';
+import 'package:cinemagic/widgets/inefficacious_refresh_indicator.dart';
 import 'package:ms_undraw/ms_undraw.dart';
 
 class SearchPage extends StatelessWidget {

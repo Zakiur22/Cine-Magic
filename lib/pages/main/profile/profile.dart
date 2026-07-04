@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/models/hive/models/user.dart';
-import 'package:movielab/pages/main/main_controller.dart';
-import 'package:movielab/pages/main/profile/profile_controller.dart';
-import 'package:movielab/pages/main/profile/sections/user_profile/edit_user_profile.dart';
-import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/models/hive/models/user.dart';
+import 'package:cinemagic/pages/main/main_controller.dart';
+import 'package:cinemagic/pages/main/profile/profile_controller.dart';
+import 'package:cinemagic/pages/main/profile/sections/user_profile/edit_user_profile.dart';
+import 'package:cinemagic/widgets/inefficacious_refresh_indicator.dart';
 
 import 'sections/lists.dart';
 import 'sections/settings.dart';

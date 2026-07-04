@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:movielab/models/user_model/user_model.dart';
-import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/pages/main/profile/profile_controller.dart';
-import 'package:movielab/pages/splash/get_user_data.dart';
-import 'package:movielab/widgets/buttons/glassmorphism_button.dart';
-import 'package:movielab/widgets/textfield_widget.dart';
+import 'package:cinemagic/models/user_model/user_model.dart';
+import 'package:cinemagic/modules/preferences/preferences_shareholder.dart';
+import 'package:cinemagic/pages/main/profile/profile_controller.dart';
+import 'package:cinemagic/pages/splash/get_user_data.dart';
+import 'package:cinemagic/widgets/buttons/glassmorphism_button.dart';
+import 'package:cinemagic/widgets/textfield_widget.dart';
 
 import 'sections/user_profile_image.dart';
 

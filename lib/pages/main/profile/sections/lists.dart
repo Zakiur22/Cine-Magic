@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:movielab/constants/user_lists.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/pages/main/profile/sections/list_page/list_page.dart';
-import 'package:movielab/widgets/buttons_section.dart';
-import 'package:movielab/modules/tools/capitalizer.dart';
-import 'package:movielab/widgets/section_title.dart';
+import 'package:cinemagic/constants/user_lists.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/pages/main/profile/sections/list_page/list_page.dart';
+import 'package:cinemagic/widgets/buttons_section.dart';
+import 'package:cinemagic/modules/tools/capitalizer.dart';
+import 'package:cinemagic/widgets/section_title.dart';
 
 class ProfilePageLists extends StatelessWidget {
   const ProfilePageLists({super.key});

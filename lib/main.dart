@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:movielab/models/hive/models/actor_preview.dart';
+import 'package:cinemagic/models/hive/models/actor_preview.dart';
 import 'constants/routes.dart';
 import 'constants/themes.dart';
 import 'models/hive/hive_helper/register_adapters.dart';
@@ -15,7 +15,7 @@ import 'pages/main/profile/profile_controller.dart';
 import 'pages/main/search/search_bar/search_bar_controller.dart';
 import 'pages/shared/item_exhibitor/item_page/item_page.dart';
 import 'pages/splash/splash_screen.dart';
-import 'package:movielab/features/watchlist_reminder/presentation/controllers/watchlist_reminder_controller.dart';
+import 'package:cinemagic/features/watchlist_reminder/presentation/controllers/watchlist_reminder_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

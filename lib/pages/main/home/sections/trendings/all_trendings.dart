@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/pages/shared/item_exhibitor/item_box/expanded_item_box/expanded_item_box.dart';
-import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/pages/shared/item_exhibitor/item_box/expanded_item_box/expanded_item_box.dart';
+import 'package:cinemagic/widgets/inefficacious_refresh_indicator.dart';
 
 class AllTrendingsPage extends StatelessWidget {
   final List<ShowPreview> trendings;

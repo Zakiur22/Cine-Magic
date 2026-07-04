@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/constants/user_lists.dart';
-import 'package:movielab/models/item_models/show_models/show_preview_model.dart';
-import 'package:movielab/modules/preferences/preferences_shareholder.dart';
-import 'package:movielab/pages/shared/item_exhibitor/item_popup/show_list_popup_actions.dart';
-import 'package:movielab/widgets/buttons_section.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/constants/user_lists.dart';
+import 'package:cinemagic/models/item_models/show_models/show_preview_model.dart';
+import 'package:cinemagic/modules/preferences/preferences_shareholder.dart';
+import 'package:cinemagic/pages/shared/item_exhibitor/item_popup/show_list_popup_actions.dart';
+import 'package:cinemagic/widgets/buttons_section.dart';
 import 'package:get/get.dart';
-import 'package:movielab/features/watchlist_reminder/presentation/controllers/watchlist_reminder_controller.dart';
+import 'package:cinemagic/features/watchlist_reminder/presentation/controllers/watchlist_reminder_controller.dart';
 
 import '../item_box_common.dart';
 

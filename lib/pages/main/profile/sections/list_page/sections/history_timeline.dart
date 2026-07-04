@@ -1,8 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/constants/general.dart';
-import 'package:movielab/pages/shared/item_exhibitor/item_box/lists_item_box.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/constants/general.dart';
+import 'package:cinemagic/pages/shared/item_exhibitor/item_box/lists_item_box.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class TimelineSteps extends StatelessWidget {

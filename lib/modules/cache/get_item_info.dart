@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/modules/api/api_requester.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/modules/api/api_requester.dart';
 import 'cacheholder.dart';
 
 Future<dynamic> getItemInfo(

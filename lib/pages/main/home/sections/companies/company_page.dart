@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/pages/shared/item_exhibitor/item_box/expanded_item_box/expanded_item_box.dart';
-import 'package:movielab/widgets/inefficacious_refresh_indicator.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/pages/shared/item_exhibitor/item_box/expanded_item_box/expanded_item_box.dart';
+import 'package:cinemagic/widgets/inefficacious_refresh_indicator.dart';
 import 'get_company.dart';
 
 class CompanyPage extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:movielab/constants/colors.dart';
+import 'package:cinemagic/constants/colors.dart';
 
 class UserIMDbRating extends StatelessWidget {
   const UserIMDbRating({super.key, required this.imdbRatingAverage});

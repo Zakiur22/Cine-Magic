@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:movielab/constants/types.dart';
-import 'package:movielab/modules/api/api_requester.dart';
-import 'package:movielab/pages/main/search/search_bar/search_bar_controller.dart';
+import 'package:cinemagic/constants/types.dart';
+import 'package:cinemagic/modules/api/api_requester.dart';
+import 'package:cinemagic/pages/main/search/search_bar/search_bar_controller.dart';
 
 Future<void> doSearch() async {
   final searchBarController = Get.find<SearchBarController>();

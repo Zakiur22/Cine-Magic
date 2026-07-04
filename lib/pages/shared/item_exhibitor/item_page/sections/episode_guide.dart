@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
-import 'package:movielab/constants/colors.dart';
-import 'package:movielab/models/item_models/show_models/full_show_model.dart';
-import 'package:movielab/modules/tools/navigate.dart';
-import 'package:movielab/widgets/buttons/glassmorphism_button.dart';
-import 'package:movielab/widgets/section_title.dart';
+import 'package:cinemagic/constants/colors.dart';
+import 'package:cinemagic/models/item_models/show_models/full_show_model.dart';
+import 'package:cinemagic/modules/tools/navigate.dart';
+import 'package:cinemagic/widgets/buttons/glassmorphism_button.dart';
+import 'package:cinemagic/widgets/section_title.dart';
 import 'episode_guide/episode_guide_page.dart';
 
 class ItemPageEpisodeGuide extends StatelessWidget {
