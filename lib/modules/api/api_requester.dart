@@ -156,7 +156,7 @@ class APIRequester {
   }
 
   // Get results of a search query from the IMDB API
-  Future<bool> search({expression, required final String searchType}) async {
+  Future<bool> search({String? expression, required final String searchType}) async {
     expression ??= Get.find<SearchBarController>().fieldText;
     final response = await getUrl(
       order: searchType,
@@ -281,7 +281,7 @@ class APIRequester {
     String url;
     if (apiKeys.isEmpty ||
         (apiKeys.length == 1 && apiKeys[0] == "XXXXXXXXXX")) {
-      var response;
+      dynamic response;
       await key_getter().then((result) async {
         if (result == RequestResult.FAILURE) {
           if (kDebugMode) {
