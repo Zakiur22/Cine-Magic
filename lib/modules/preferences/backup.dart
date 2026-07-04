@@ -77,11 +77,6 @@ Future<bool> restoreBackup() async {
       if (value) {
         Map<String, dynamic> backup = jsonDecode(await files.readAsString());
         Box<HiveUser> user = Hive.box<HiveUser>('user');
-        Box<HiveShowPreview> watchlist = Hive.box<HiveShowPreview>('watchlist');
-        Box<HiveShowPreview> history = Hive.box<HiveShowPreview>('history');
-        Box<HiveShowPreview> collection =
-            Hive.box<HiveShowPreview>('collection');
-        Box<HiveShowPreview> artists = Hive.box<HiveShowPreview>('artists');
 
         user.deleteAt(0);
         shareholder.deleteList("watchlist");
