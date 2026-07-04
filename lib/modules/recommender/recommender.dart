@@ -15,9 +15,7 @@ Future recommender() async {
   ];
   List<ShowPreview> allRecommended = await getRecommended(allLists: allLists);
   Map<String, int> allRecommendedStats = {};
-  int i = 0;
   for (ShowPreview similar in allRecommended) {
-    i++;
     if (!alreadyWatchedIds.contains(similar.id)) {
       // This way, the system is not gonna recommend user the items that they have been already watched or at least know them.
       if (allRecommendedStats.containsKey(similar.title)) {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:movielab/constants/app.dart';
-import 'package:movielab/modules/Recommender/Recommender.dart';
+import 'package:movielab/modules/recommender/recommender.dart';
 import 'package:movielab/modules/tools/navigate.dart';
 import 'package:movielab/pages/main/main_page.dart';
 import 'package:movielab/widgets/error.dart';
@@ -13,7 +13,7 @@ import 'get_Initial_data.dart';
 import 'get_user_data.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key, this.then}) : super(key: key);
+  const SplashScreen({super.key, this.then});
   final VoidCallback? then;
 
   @override
