@@ -8,6 +8,8 @@ import 'package:movielab/models/item_models/show_models/show_preview_model.dart'
 import 'package:movielab/modules/preferences/preferences_shareholder.dart';
 import 'package:movielab/pages/shared/item_exhibitor/item_popup/show_list_popup_actions.dart';
 import 'package:movielab/widgets/buttons_section.dart';
+import 'package:get/get.dart';
+import 'package:movielab/features/watchlist_reminder/presentation/controllers/watchlist_reminder_controller.dart';
 
 import '../item_box_common.dart';
 
@@ -430,6 +432,70 @@ class _ExpandedItemBoxState extends State<ExpandedItemBox>
                               ),
                             )
                           : const SizedBox.shrink(),
+                      if (_isThereInLists["watchlist"] == true) ...[
+                        GetX<WatchlistReminderController>(
+                          builder: (controller) {
+                            final scheduled = controller.activeReminders[widget.show.id];
+                            final hasReminder = scheduled != null;
+                            return Padding(
+                              padding: const EdgeInsets.only(top: 10),
+                              child: InkWell(
+                                onTap: () => _showReminderScheduler(context),
+                                borderRadius: BorderRadius.circular(8),
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                                  decoration: BoxDecoration(
+                                    color: hasReminder 
+                                        ? kAccentColor.withValues(alpha: 0.15) 
+                                        : Colors.white.withValues(alpha: 0.05),
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: Border.all(
+                                      color: hasReminder 
+                                          ? kAccentColor.withValues(alpha: 0.3) 
+                                          : Colors.white.withValues(alpha: 0.1),
+                                      width: 1,
+                                    ),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Icon(
+                                        hasReminder ? Icons.alarm_on_rounded : Icons.add_alarm_rounded,
+                                        color: hasReminder ? kAccentColor : Colors.white70,
+                                        size: 16,
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        hasReminder
+                                            ? "Remind: ${scheduled.toString().substring(5, 16)}"
+                                            : "Set Watch Reminder",
+                                        style: TextStyle(
+                                          color: hasReminder ? kAccentColor : Colors.white70,
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      if (hasReminder) ...[
+                                        const SizedBox(width: 8),
+                                        GestureDetector(
+                                          onTap: () async {
+                                            await controller.cancelReminder(widget.show.id, widget.show.title);
+                                          },
+                                          child: const Icon(
+                                            Icons.close_rounded,
+                                            color: Colors.redAccent,
+                                            size: 16,
+                                          ),
+                                        ),
+                                      ],
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            );
+                          }
+                        ),
+                      ],
                     ],
                   ),
                 ),
@@ -461,5 +527,60 @@ class _ExpandedItemBoxState extends State<ExpandedItemBox>
           })
         });
     return true;
+  }
+
+  Future<void> _showReminderScheduler(BuildContext context) async {
+    final DateTime? pickedDate = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime.now(),
+      lastDate: DateTime.now().add(const Duration(days: 365)),
+      builder: (context, child) {
+        return Theme(
+          data: Theme.of(context).copyWith(
+            colorScheme: const ColorScheme.dark(
+              primary: kAccentColor,
+              onPrimary: Colors.white,
+              surface: kBackgroundColor,
+              onSurface: Colors.white,
+            ),
+            dialogBackgroundColor: kBackgroundColor,
+          ),
+          child: child!,
+        );
+      },
+    );
+
+    if (pickedDate != null) {
+      final TimeOfDay? pickedTime = await showTimePicker(
+        // ignore: use_build_context_synchronously
+        context: context,
+        initialTime: TimeOfDay.now(),
+        builder: (context, child) {
+          return Theme(
+            data: Theme.of(context).copyWith(
+              colorScheme: const ColorScheme.dark(
+                primary: kAccentColor,
+                onPrimary: Colors.white,
+                surface: kBackgroundColor,
+                onSurface: Colors.white,
+              ),
+              dialogBackgroundColor: kBackgroundColor,
+            ),
+            child: child!,
+          );
+        },
+      );
+
+      if (pickedTime != null) {
+        final controller = Get.find<WatchlistReminderController>();
+        await controller.scheduleReminder(
+          widget.show.id,
+          widget.show.title,
+          pickedDate,
+          pickedTime,
+        );
+      }
+    }
   }
 }

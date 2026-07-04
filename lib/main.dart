@@ -15,6 +15,7 @@ import 'pages/main/profile/profile_controller.dart';
 import 'pages/main/search/search_bar/search_bar_controller.dart';
 import 'pages/shared/item_exhibitor/item_page/item_page.dart';
 import 'pages/splash/splash_screen.dart';
+import 'package:movielab/features/watchlist_reminder/presentation/controllers/watchlist_reminder_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -78,4 +79,5 @@ Future? initializeGetX() async {
   Get.put(SearchBarController());
   Get.put(ProfileController());
   Get.put(CacheData());
+  Get.put(WatchlistReminderController());
 }
